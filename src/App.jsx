@@ -547,10 +547,10 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
             {currentCard.hint && !hintRevealed ? (
               <div className="hint-area">
                 <div className="hint-image-placeholder">
-                  <img src={`/assets/${currentCard.image}`} alt="Hint" onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
-                  <div className="hint-fallback" style={{ display:"none" }}>🖼️ {currentCard.image}</div>
+                  <img src={"/assets/" + currentCard.image.replace(/^\/public\/assets\//, "").replace(/^\/assets\//, "")} alt="Hint" onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
+                  <div className="hint-fallback" style={{ display:"none" }}>{"Hint: " + currentCard.image}</div>
                 </div>
-                <button className="btn-reveal" onClick={() => setHintRevealed(true)}>👁 Rivela Testo</button>
+                <button className="btn-reveal" onClick={() => setHintRevealed(true)}>Rivela Testo</button>
               </div>
             ) : (
               <div className="card-clue">{currentCard.clue}</div>
