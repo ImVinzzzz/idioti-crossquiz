@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import gameData from "../data/schema1.json";
+import Editor from "./Editor";
 
 // ─── CONSTANTS ──────────────────────────────────────────────────────────────
 const JOKER_INVENTORY = { x2: 2, x3: 2, x4: 1 };
@@ -80,14 +81,14 @@ function HomeScreen({ onStart }) {
 }
 
 // SETUP SCREEN
-function SetupScreen({ onGameStart }) {
+function SetupScreen({ onGameStart, suApriEditor }) {
   const [numPlayers, setNumPlayers] = useState(2);
   const [names, setNames] = useState(["","","","","",""]);
   const [teamsMode, setTeamsMode] = useState(false);
 
   const handleStart = () => {
     const finalNames = names.slice(0, numPlayers).map((n, i) =>
-      n.trim() || (teamsMode ? `Squadra ${i+1}` : `Giocatore ${i+1}`)
+      n.trim() || (teamsMode ? "Squadra " + (i + 1) : "Giocatore " + (i + 1))
     );
     onGameStart({ numPlayers, names: finalNames, teamsMode });
   };
@@ -118,10 +119,15 @@ function SetupScreen({ onGameStart }) {
             </div>
           ))}
         </div>
-        <label className="teams-check">
-          <input type="checkbox" checked={teamsMode} onChange={e => setTeamsMode(e.target.checked)} />
-          <span>Gioca a squadre</span>
-        </label>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "10px" }}>
+          <label className="teams-check">
+            <input type="checkbox" checked={teamsMode} onChange={e => setTeamsMode(e.target.checked)} />
+            <span>Gioca a squadre</span>
+          </label>
+          <button type="button" className="btn-crea-tabellone-link" onClick={suApriEditor}>
+            Crea nuovo tabellone
+          </button>
+        </div>
         <button className="btn-start" onClick={handleStart}>Inizia Partita →</button>
       </div>
     </div>
@@ -604,7 +610,7 @@ function CrosswordGrid({ gridMap, highlightedCells }) {
 
 // ─── ROOT APP ─────────────────────────────────────────────────────────────────
 export default function App() {
-  const [screen, setScreen] = useState("home"); // home | setup | game | end
+  const [screen, setScreen] = useState("home"); // home | setup | game | end | editor
   const [gameConfig, setGameConfig] = useState(null);
   const [finalPlayers, setFinalPlayers] = useState(null);
 
@@ -620,7 +626,8 @@ export default function App() {
   };
 
   if (screen === "home") return <HomeScreen onStart={() => setScreen("setup")} />;
-  if (screen === "setup") return <SetupScreen onGameStart={handleGameStart} />;
+  if (screen === "setup") return <SetupScreen onGameStart={handleGameStart} suApriEditor={() => setScreen("editor")} />;
+  if (screen === "editor") return <Editor suChiudi={() => setScreen("setup")} />;
   if (screen === "game" && gameConfig) return <GameBoard players={gameConfig.players} onEndGame={handleEndGame} />;
   if (screen === "end" && finalPlayers) return <EndGameScreen players={finalPlayers} onRestart={() => setScreen("home")} />;
   return null;
