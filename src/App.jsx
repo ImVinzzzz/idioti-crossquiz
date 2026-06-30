@@ -55,8 +55,8 @@ function normalizeAnswer(str) {
 // ─── HAZARD DECK ─────────────────────────────────────────────────────────────
 function buildHazardDeck(numPlayers) {
   const deck = [];
-  const santos = Math.ceil(numPlayers / 2);
-  const idiots = numPlayers - santos;
+  const santos = numPlayers + 1;
+  const idiots = numPlayers + 1;
   for (let i = 0; i < santos; i++) deck.push({ type: "santo" });
   for (let i = 0; i < idiots; i++) deck.push({ type: "idiota" });
   return deck;
@@ -632,7 +632,7 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
 
       {currentCard && currentCard.isHazard && (
         <div className="hazard-modal-overlay">
-          <div className="hazard-modal-content">
+          <div className={"hazard-modal-content hazard-" + currentCard.type}>
             <img
               src={currentCard.type === "santo" ? "/assets/santo.svg" : "/assets/idiota.svg"}
               alt={currentCard.type}
