@@ -127,7 +127,7 @@
       "col": 0,
       "length": 5,
       "answer": "FIONA",
-      "clue": "Moglie dell’orco Shrek",
+      "clue": "Moglie dell'orco Shrek",
       "hint": true,
       "image": "/public/assets/Santini/o_14.jpg"
     },
@@ -423,7 +423,7 @@
       "col": 5,
       "length": 5,
       "answer": "REATO",
-      "clue": "C’è quello procedibile d’ufficio e quello perseguibile sulla base di una querela, denuncia, richiesta o istanza",
+      "clue": "C'è quello procedibile d'ufficio e quello perseguibile sulla base di una querela, denuncia, richiesta o istanza",
       "hint": false
     },
     {
@@ -512,7 +512,7 @@
       "col": 8,
       "length": 2,
       "answer": "AB",
-      "clue": "In cima all’abside.",
+      "clue": "In cima all'abside.",
       "hint": false
     },
     {
@@ -523,7 +523,7 @@
       "col": 11,
       "length": 2,
       "answer": "AA",
-      "clue": "I confini dell’Alaska.",
+      "clue": "I confini dell'Alaska.",
       "hint": false
     }
   ]
