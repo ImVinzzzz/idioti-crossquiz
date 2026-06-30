@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import gameData from "../data/schema1.json";
+import elencoSchemi from "../data/indice.json";
 import Editor from "./Editor";
 
 // ─── CONSTANTS ──────────────────────────────────────────────────────────────
@@ -13,18 +13,19 @@ const WRONG_ANSWER_PTS = 5;
 const COLORS = ["#1D6FD3","#D85A30","#1D9E75","#884AB7","#BA7517","#A32D2D"];
 
 // ─── GRID UTILITIES ─────────────────────────────────────────────────────────
-function buildGridMap() {
+function buildGridMap(gameData) {
   const map = {};
-  const blackSet = new Set(gameData.blackCells.map(([r,c]) => `${r},${c}`));
+  if (!gameData) return map;
+  const blackSet = new Set(gameData.blackCells.map(([r,c]) => r + "," + c));
   const numberMap = {};
   gameData.words.forEach(w => {
-    const key = `${w.row},${w.col}`;
+    const key = w.row + "," + w.col;
     if (!numberMap[key]) numberMap[key] = [];
     numberMap[key].push(w.number);
   });
   for (let r = 0; r < gameData.meta.gridRows; r++) {
     for (let c = 0; c < gameData.meta.gridCols; c++) {
-      const k = `${r},${c}`;
+      const k = r + "," + c;
       map[k] = {
         black: blackSet.has(k),
         letter: "",
@@ -81,7 +82,7 @@ function HomeScreen({ onStart }) {
 }
 
 // SETUP SCREEN
-function SetupScreen({ onGameStart, suApriEditor }) {
+function SetupScreen({ onGameStart, suApriEditor, schemi, schemaSelezionato, suCambiaSchema }) {
   const [numPlayers, setNumPlayers] = useState(2);
   const [names, setNames] = useState(["","","","","",""]);
   const [teamsMode, setTeamsMode] = useState(false);
@@ -97,6 +98,30 @@ function SetupScreen({ onGameStart, suApriEditor }) {
     <div className="setup-screen">
       <h1 className="setup-title">Configurazione Partita</h1>
       <div className="setup-card">
+        <label className="setup-label">Seleziona Tabellone</label>
+        <select
+          value={schemaSelezionato}
+          onChange={e => suCambiaSchema(e.target.value)}
+          style={{
+            width: "100%",
+            background: "rgba(255,255,255,0.06)",
+            border: "1px solid rgba(255,255,255,0.12)",
+            borderRadius: "8px",
+            padding: "10px 14px",
+            color: "#e8e8f0",
+            fontSize: "15px",
+            outline: "none",
+            marginBottom: "10px",
+            cursor: "pointer"
+          }}
+        >
+          {schemi.map(s => (
+            <option key={s.id} value={s.id} style={{ background: "#1a1a2e", color: "#e8e8f0" }}>
+              {s.titolo}
+            </option>
+          ))}
+        </select>
+
         <label className="setup-label">Numero di {teamsMode ? "squadre" : "giocatori"}</label>
         <div className="num-selector">
           {[2,3,4,5,6].map(n => (
@@ -161,14 +186,14 @@ function EndGameScreen({ players, onRestart }) {
 }
 
 // ─── MAIN GAME BOARD ─────────────────────────────────────────────────────────
-function GameBoard({ players: initialPlayers, onEndGame }) {
+function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
   const [players, setPlayers] = useState(() => initialPlayers.map((p, i) => ({
     ...p,
     score: 0,
     jokers: { ...JOKER_INVENTORY },
   })));
   const [currentPlayerIdx, setCurrentPlayerIdx] = useState(() => Math.floor(Math.random() * initialPlayers.length));
-  const [gridMap, setGridMap] = useState(buildGridMap);
+  const [gridMap, setGridMap] = useState(() => buildGridMap(gameData));
   const [deck, setDeck] = useState(() => {
     const words = gameData.words.map(w => ({ ...w, inDeck: true }));
     const hazards = buildHazardDeck(initialPlayers.length);
@@ -467,7 +492,7 @@ function GameBoard({ players: initialPlayers, onEndGame }) {
       {/* CENTER - Crossword Grid */}
       <main className="grid-area">
         <div className="crossword-wrapper">
-          <CrosswordGrid gridMap={gridMap} highlightedCells={highlightedCells} />
+          <CrosswordGrid gridMap={gridMap} highlightedCells={highlightedCells} gameData={gameData} />
         </div>
       </main>
 
@@ -577,15 +602,15 @@ function GameBoard({ players: initialPlayers, onEndGame }) {
 }
 
 // ─── CROSSWORD GRID COMPONENT ─────────────────────────────────────────────────
-function CrosswordGrid({ gridMap, highlightedCells }) {
+function CrosswordGrid({ gridMap, highlightedCells, gameData }) {
   const { gridRows, gridCols } = gameData.meta;
   const highlightSet = new Set(highlightedCells);
 
   return (
-    <div className="crossword-grid" style={{ gridTemplateColumns: `repeat(${gridCols}, 1fr)` }}>
+    <div className="crossword-grid" style={{ gridTemplateColumns: "repeat(" + gridCols + ", 1fr)" }}>
       {Array.from({ length: gridRows }).map((_, r) =>
         Array.from({ length: gridCols }).map((_, c) => {
-          const k = `${r},${c}`;
+          const k = r + "," + c;
           const cell = gridMap[k];
           if (!cell) return null;
           const isHighlighted = highlightSet.has(k);
@@ -594,8 +619,10 @@ function CrosswordGrid({ gridMap, highlightedCells }) {
             return <div key={k} className="cell cell-black"></div>;
           }
 
+          const classiCella = "cell cell-white" + (isHighlighted ? " cell-highlighted" : "") + (cell.revealed ? " cell-revealed" : "");
+
           return (
-            <div key={k} className={`cell cell-white ${isHighlighted ? "cell-highlighted" : ""} ${cell.revealed ? "cell-revealed" : ""}`}>
+            <div key={k} className={classiCella}>
               {cell.numbers.length > 0 && (
                 <span className="cell-number">{cell.numbers[0]}</span>
               )}
@@ -608,11 +635,39 @@ function CrosswordGrid({ gridMap, highlightedCells }) {
   );
 }
 
+const schemiModuli = import.meta.glob(["../data/*.json", "!../data/indice.json"]);
+
 // ─── ROOT APP ─────────────────────────────────────────────────────────────────
 export default function App() {
   const [screen, setScreen] = useState("home"); // home | setup | game | end | editor
+  const [schemaSelezionato, setSchemaSelezionato] = useState(elencoSchemi[0] ? elencoSchemi[0].id : "santi");
+  const [gameData, setGameData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [gameConfig, setGameConfig] = useState(null);
   const [finalPlayers, setFinalPlayers] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
+    const schemaTrovato = elencoSchemi.find(function (s) { return s.id === schemaSelezionato; });
+    const nomeFile = schemaTrovato ? schemaTrovato.file : "schema1";
+    const percorso = "../data/" + nomeFile + ".json";
+    const caricaSchema = schemiModuli[percorso];
+
+    if (caricaSchema) {
+      caricaSchema()
+        .then(function (module) {
+          setGameData(module.default);
+          setLoading(false);
+        })
+        .catch(function (err) {
+          console.error("Errore nel caricamento del tabellone:", err);
+          setLoading(false);
+        });
+    } else {
+      console.error("Tabellone non trovato:", percorso);
+      setLoading(false);
+    }
+  }, [schemaSelezionato]);
 
   const handleGameStart = ({ numPlayers, names, teamsMode }) => {
     const players = names.map((name, i) => ({ id: i, name, color: COLORS[i], teamsMode }));
@@ -625,10 +680,26 @@ export default function App() {
     setScreen("end");
   };
 
+  if (loading) {
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", background: "#1a1a2e", color: "#f5c518" }}>
+        <h3>Caricamento tabellone...</h3>
+      </div>
+    );
+  }
+
   if (screen === "home") return <HomeScreen onStart={() => setScreen("setup")} />;
-  if (screen === "setup") return <SetupScreen onGameStart={handleGameStart} suApriEditor={() => setScreen("editor")} />;
+  if (screen === "setup") return (
+    <SetupScreen
+      onGameStart={handleGameStart}
+      suApriEditor={() => setScreen("editor")}
+      schemi={elencoSchemi}
+      schemaSelezionato={schemaSelezionato}
+      suCambiaSchema={setSchemaSelezionato}
+    />
+  );
   if (screen === "editor") return <Editor suChiudi={() => setScreen("setup")} />;
-  if (screen === "game" && gameConfig) return <GameBoard players={gameConfig.players} onEndGame={handleEndGame} />;
+  if (screen === "game" && gameConfig && gameData) return <GameBoard players={gameConfig.players} onEndGame={handleEndGame} gameData={gameData} />;
   if (screen === "end" && finalPlayers) return <EndGameScreen players={finalPlayers} onRestart={() => setScreen("home")} />;
   return null;
 }
