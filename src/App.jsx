@@ -623,6 +623,23 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
           </div>
         )}
       </aside>
+
+      {currentCard && currentCard.isHazard && (
+        <div className="hazard-modal-overlay">
+          <div className="hazard-modal-content">
+            <img
+              src={currentCard.type === "santo" ? "/assets/santo.svg" : "/assets/idiota.svg"}
+              alt={currentCard.type}
+              className="hazard-modal-img"
+            />
+            <div className="hazard-modal-text">
+              {currentCard.type === "santo"
+                ? "Santo! +" + HAZARD_SANTO_PTS + " pt a " + players[currentPlayerIdx].name
+                : "Idiota! +" + HAZARD_IDIOTA_PTS + " pt a tutti gli avversari"}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
