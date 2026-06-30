@@ -5,39 +5,138 @@
     "gridCols": 13
   },
   "blackCells": [
-    [ 0,12 ],
-    [ 1,5 ],
-    [ 2,5 ],
-    [ 2,9 ],
-    [ 2,10 ],
-    [ 3,2 ],
-    [ 3,4 ],
-    [ 3,9 ],
-    [ 4,1 ],
-    [ 4,7 ],
-    [ 4,10 ],
-    [ 5,4 ],
-    [ 5,9 ],
-    [ 6,0 ],
-    [ 6,8 ],
-    [ 7,1 ],
-    [ 7,3 ],
-    [ 7,7 ],
-    [ 8,6 ],
-    [ 8,10 ],
-    [ 8,12 ],
-    [ 9,3 ],
-    [ 9,5 ],
-    [ 9,7 ],
-    [ 9,11 ],
-    [ 10,7 ],
-    [ 11,8 ],
-    [ 12,4 ],
-    [ 12,6 ],
-    [ 13,1 ],
-    [ 13,3 ],
-    [ 13,10 ],
-    [ 13,12 ]
+    [
+      0,
+      12
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      9,
+      5
+    ],
+    [
+      9,
+      7
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      11,
+      8
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      13,
+      10
+    ],
+    [
+      13,
+      12
+    ]
   ],
   "words": [
     {
@@ -325,7 +424,8 @@
       "length": 5,
       "answer": "TRONI",
       "clue": "Sedute... di re e regine",
-      "hint": false
+      "hint": true,
+      "image": "/public/assets/schema1/s1_46o.jpg"
     },
     {
       "id": 26,
@@ -380,7 +480,7 @@
       "direction": "across",
       "row": 13,
       "col": 4,
-      "length": 5,
+      "length": 6,
       "answer": "EDVIGE",
       "clue": "La Santa Duchessa di Slesia e di Polonia ricordata il 16 ottobre... l'attrice, invece, è la Fenech.",
       "hint": true,
@@ -396,7 +496,7 @@
       "answer": "ORSOLA",
       "clue": "Fanciulla di rara bellezza, figlia di un re di Britagna. Tra le sue compagne di martirio: Saturia, Saula, Brittola...",
       "hint": true,
-      "image": "/public/assets/schema1/si_1v.jpg"
+      "image": "/public/assets/schema1/s1_1v.jpg"
     },
     {
       "id": 32,
