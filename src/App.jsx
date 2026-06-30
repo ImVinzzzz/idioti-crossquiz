@@ -306,11 +306,17 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
     setActiveJoker(null);
     setInputVal("");
     highlightWord(word);
-    setPhase("joker_timer");
-    startTimer(TIMER_JOKER, () => {
+    const hasJokers = currentPlayer.jokers.x2 > 0 || currentPlayer.jokers.x3 > 0 || currentPlayer.jokers.x4 > 0;
+    if (hasJokers) {
+      setPhase("joker_timer");
+      startTimer(TIMER_JOKER, () => {
+        setPhase("answer_timer");
+        startTimer(TIMER_ANSWER, handleTimeUp);
+      });
+    } else {
       setPhase("answer_timer");
       startTimer(TIMER_ANSWER, handleTimeUp);
-    });
+    }
     setTimeout(() => { if (inputRef.current) inputRef.current.focus(); }, 100);
   };
 
