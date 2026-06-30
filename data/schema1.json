@@ -95,7 +95,7 @@
       "col": 6,
       "length": 3,
       "answer": "ELI",
-      "clue": "Sommo sacerdote di Silo, il penultimo dei giudici israeliti, predecessore di Samuele",
+      "clue": "Sommo sacerdote di Silo, il penultimo dei giudici israeliti, predecessore di Samuele. Ma anche principio di elicottero.",
       "hint": true,
       "image": "/public/assets/schema1/s1_16o.jpg"
     },
@@ -370,7 +370,7 @@
       "col": 7,
       "length": 6,
       "answer": "LUCIDO",
-      "clue": "Il santo di Aquara, ricordato il 5 dicembre",
+      "clue": "Il santo di Aquara, ricordato il 5 dicembre. QUllo da scarpe, serve a prendersene cura.",
       "hint": true,
       "image": "/public/assets/schema1/s1_52o.jpg"
     },
@@ -382,7 +382,7 @@
       "col": 4,
       "length": 5,
       "answer": "EDVIGE",
-      "clue": "La Santa Duchessa di Slesia e di Polonia ricordata il 16 ottobre",
+      "clue": "La Santa Duchessa di Slesia e di Polonia ricordata il 16 ottobre... l'attrice, invece, è la Fenech.",
       "hint": true,
       "image": "/public/assets/schema1/s1_54o.jpg"
     },
@@ -451,7 +451,7 @@
       "col": 6,
       "length": 8,
       "answer": "ADELAIDE",
-      "clue": "Santa Imperatrice, vedova di Lotario II e poi moglie di Ottone I, commemorata il 16 dicembre",
+      "clue": "Santa Imperatrice, vedova di Lotario II e poi moglie di Ottone I, commemorata il 16 dicembre. Vero nome della Heidy dei cartoni animati.",
       "hint": true,
       "image": "/public/assets/schema1/s1_6v.jpg"
     },
@@ -463,7 +463,7 @@
       "col": 7,
       "length": 4,
       "answer": "BELL",
-      "clue": "Ingegnere e inventore di origine scozzese che per primo brevettò il telefono",
+      "clue": "Ingegnere e inventore di origine scozzese che per primo brevettò il telefono.",
       "hint": true,
       "image": "/public/assets/schema1/s1_7v.jpg"
     },
@@ -581,7 +581,8 @@
       "length": 3,
       "answer": "RON",
       "clue": "Nome d'arte di Rosalino Cellamare",
-      "hint": false
+      "hint": true,
+      "image": "/public/assets/schema1/s1_28v.jpg"
     },
     {
       "id": 48,
