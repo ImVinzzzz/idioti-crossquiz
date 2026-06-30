@@ -338,7 +338,10 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
       if (i !== currentPlayerIdx) return p;
       return { ...p, jokers: { ...p.jokers, [type]: p.jokers[type] - 1 } };
     }));
-    showToast(`Jolly ${type.toUpperCase()} attivato!`, "success");
+    showToast("Jolly " + type.toUpperCase() + " attivato!", "success");
+    clearTimer();
+    setPhase("answer_timer");
+    startTimer(TIMER_ANSWER, handleTimeUp);
   };
 
   const submitAnswer = () => {
@@ -367,22 +370,38 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
 
     // Reveal cells on grid
     const cells = getCellsForWord(word);
-    setGridMap(prev => {
-      const next = { ...prev };
-      cells.forEach(({ r, c }, idx) => {
-        const k = `${r},${c}`;
-        next[k] = { ...next[k], letter: word.answer[idx], revealed: true };
-      });
-      return next;
+    const updatedGridMap = { ...gridMap };
+    cells.forEach(({ r, c }, idx) => {
+      const k = r + "," + c;
+      updatedGridMap[k] = { ...updatedGridMap[k], letter: word.answer[idx], revealed: true };
     });
+    setGridMap(updatedGridMap);
 
-    // Remove from deck
-    setDeck(d => ({ ...d, words: d.words.map(w => w.id === word.id ? { ...w, inDeck: false } : w) }));
+    // Remove from deck and check for any other words completed by intersections
+    setDeck(d => {
+      const updatedWords = d.words.map(w => {
+        if (w.id === word.id) {
+          return { ...w, inDeck: false };
+        }
+        if (w.inDeck) {
+          const wCells = getCellsForWord(w);
+          const isFullyRevealed = wCells.every(({ r, c }) => {
+            const cell = updatedGridMap[r + "," + c];
+            return cell && cell.revealed;
+          });
+          if (isFullyRevealed) {
+            return { ...w, inDeck: false };
+          }
+        }
+        return w;
+      });
+      return { ...d, words: updatedWords };
+    });
     setHighlightedCells([]);
     setFailChain(null);
 
-    const breakdown = `${basePoints}pt base${jokerMult>1 ? ` × ${jokerMult} Jolly` : ""}${hintMult>1 ? " × 2 Hint" : ""}`;
-    showToast(`✅ Corretto! +${total}pt (${breakdown})`, "success");
+    const breakdown = basePoints + "pt base" + (jokerMult > 1 ? " x " + jokerMult + " Jolly" : "") + (hintMult > 1 ? " x 2 Hint" : "");
+    showToast("Corretto! +" + total + "pt (" + breakdown + ")", "success");
     setPhase("idle");
     setCurrentCard(null);
     advanceTurn();
@@ -410,25 +429,30 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
       const totalPlayers = players.length;
       if (totalPlayers === 1) {
         // Solo: card returns to bag
-        setDeck(d => d); // already in deck
-        showToast("❌ Sbagliato! La carta torna nel sacchetto.", "danger");
+        showToast("Sbagliato! La carta torna nel sacchetto.", "danger");
         setPhase("idle");
         setCurrentCard(null);
         setHighlightedCells([]);
         advanceTurn();
       } else {
         setFailChain({ wordId: word.id, attemptedPlayers });
-        showToast(`❌ Sbagliato! +${WRONG_ANSWER_PTS}pt agli avversari. Passa al prossimo.`, "danger");
-        setPhase("idle");
-        setCurrentCard(null);
-        setHighlightedCells([]);
-        advanceTurn();
+        showToast("Sbagliato! +" + WRONG_ANSWER_PTS + "pt agli avversari.", "danger");
+        
+        // Passa direttamente al concorrente successivo, timer domanda, saltando l'hint ed il jolly
+        const nextPlayerIdx = (currentPlayerIdx + 1) % players.length;
+        setCurrentPlayerIdx(nextPlayerIdx);
+        setHintRevealed(true);
+        setActiveJoker(null);
+        setInputVal("");
+        setPhase("answer_timer");
+        startTimer(TIMER_ANSWER, handleTimeUp);
+        setTimeout(() => { if (inputRef.current) inputRef.current.focus(); }, 100);
       }
     } else {
       const attempted = [...failChain.attemptedPlayers, currentPlayerIdx];
       if (attempted.length >= players.length - 1) {
         // Everyone tried, card back in bag
-        showToast("❌ Nessuno ha indovinato! La carta torna nel sacchetto.", "danger");
+        showToast("Nessuno ha indovinato! La carta torna nel sacchetto.", "danger");
         setFailChain(null);
         setHighlightedCells([]);
         setPhase("idle");
@@ -436,11 +460,17 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
         advanceTurn();
       } else {
         setFailChain({ ...failChain, attemptedPlayers: attempted });
-        showToast(`❌ Sbagliato! +${WRONG_ANSWER_PTS}pt agli avversari.`, "danger");
-        setPhase("idle");
-        setCurrentCard(null);
-        setHighlightedCells([]);
-        advanceTurn();
+        showToast("Sbagliato! +" + WRONG_ANSWER_PTS + "pt agli avversari.", "danger");
+        
+        // Passa direttamente al concorrente successivo, timer domanda, saltando l'hint ed il jolly
+        const nextPlayerIdx = (currentPlayerIdx + 1) % players.length;
+        setCurrentPlayerIdx(nextPlayerIdx);
+        setHintRevealed(true);
+        setActiveJoker(null);
+        setInputVal("");
+        setPhase("answer_timer");
+        startTimer(TIMER_ANSWER, handleTimeUp);
+        setTimeout(() => { if (inputRef.current) inputRef.current.focus(); }, 100);
       }
     }
   };
@@ -500,10 +530,9 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
           {failChain && <div className="fail-chain-badge">Catena errori</div>}
         </div>
 
-        {/* Draw button */}
         {phase === "idle" && (
           <button className="btn-draw" onClick={drawCard}>
-            🎴 Estrai Carta
+            Estrai Definizione
           </button>
         )}
 
