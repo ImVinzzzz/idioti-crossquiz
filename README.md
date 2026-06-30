@@ -1,4 +1,4 @@
-# Santi & Idioti Cross Quiz
+# Idioti Cross Quiz
 
 Un gioco da tavolo digitale per 2–6 giocatori (o squadre) basato su un cruciverba a tema santi e cultura generale.
 
