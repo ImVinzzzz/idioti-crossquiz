@@ -489,7 +489,7 @@ export default function Editor({ suChiudi }) {
         <div className="editor-colonna-anteprima">
           <div className="editor-sezione-anteprima">
             <h3>Anteprima Griglia</h3>
-            <div className="editor-contenitore-griglia">
+            <div className="editor-contenitore-griglia" style={{ aspectRatio: colonne + "/" + righe, height: "auto" }}>
               <div
                 className="editor-griglia-visualizzazione"
                 style={{ gridTemplateColumns: "repeat(" + colonne + ", 1fr)" }}

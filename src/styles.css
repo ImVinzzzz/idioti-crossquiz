@@ -212,7 +212,6 @@ body {
 .crossword-wrapper {
   width: 100%;
   max-width: min(calc(100% - 0px), 680px);
-  aspect-ratio: 13/14;
 }
 .crossword-grid {
   display: grid;
@@ -860,7 +859,6 @@ body {
 .editor-contenitore-griglia {
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 1;
   background: #0d0d1a;
   padding: 10px;
   border-radius: 8px;

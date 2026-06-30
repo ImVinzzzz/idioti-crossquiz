@@ -491,7 +491,7 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
 
       {/* CENTER - Crossword Grid */}
       <main className="grid-area">
-        <div className="crossword-wrapper">
+        <div className="crossword-wrapper" style={{ aspectRatio: gameData.meta.gridCols + "/" + gameData.meta.gridRows }}>
           <CrosswordGrid gridMap={gridMap} highlightedCells={highlightedCells} gameData={gameData} />
         </div>
       </main>
