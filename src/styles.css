@@ -22,37 +22,34 @@ body {
   content: '';
   position: absolute; inset: 0;
   background: radial-gradient(ellipse at center, rgba(53,118,210,0.15) 0%, transparent 70%);
+  z-index: 0;
 }
-.home-content { text-align: center; position: relative; z-index: 1; }
-.home-logo { display: flex; flex-direction: column; align-items: center; gap: 0; }
-.logo-santi {
-  font-size: clamp(48px, 8vw, 96px);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  color: #f5c518;
-  text-shadow: 0 0 60px rgba(245,197,24,0.4);
-  font-family: 'Bebas Neue', 'Impact', sans-serif;
+.home-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/griglia_bg.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: 0;
 }
-.logo-amp {
-  font-size: clamp(28px, 4vw, 56px);
-  color: #888;
-  line-height: 0.8;
+.home-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
-.logo-idioti {
-  font-size: clamp(48px, 8vw, 96px);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  color: #e05252;
-  text-shadow: 0 0 60px rgba(224,82,82,0.4);
-  font-family: 'Bebas Neue', 'Impact', sans-serif;
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  max-width: 90vw;
 }
-.logo-sub {
-  font-size: clamp(14px, 2vw, 22px);
-  letter-spacing: 0.4em;
-  color: #8899bb;
-  margin-top: 8px;
-  font-weight: 300;
-  text-transform: uppercase;
+.home-logo-img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(245,197,24,0.25));
 }
 .home-hint {
   margin-top: 40px;

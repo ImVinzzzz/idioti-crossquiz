@@ -64,16 +64,13 @@ function buildHazardDeck(numPlayers) {
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 
-// HOME SCREEN
 function HomeScreen({ onStart }) {
   return (
     <div className="home-screen" onClick={onStart}>
+      <div className="home-bg-grid"></div>
       <div className="home-content">
-        <div className="home-logo">
-          <span className="logo-santi">SANTI</span>
-          <span className="logo-amp">&amp;</span>
-          <span className="logo-idioti">IDIOTI</span>
-          <div className="logo-sub">CROSS QUIZ</div>
+        <div className="home-logo-container">
+          <img src="/assets/idioti_logo.svg" alt="Logo Santi & Idioti" className="home-logo-img" />
         </div>
         <div className="home-hint">Clicca per iniziare</div>
       </div>
