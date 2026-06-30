@@ -1,4 +1,4 @@
-# Idioti Cross Quiz
+# NCdI Cross Quiz
 
 Un gioco da tavolo digitale per 2–6 giocatori (o squadre) basato su un cruciverba a tema santi e cultura generale.
 
