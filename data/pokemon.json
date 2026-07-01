@@ -1,0 +1,912 @@
+{
+  "meta": {
+    "title": "Cruciverba pokemon",
+    "gridRows": 12,
+    "gridCols": 16
+  },
+  "blackCells": [
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      15
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      14
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      15
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      10,
+      8
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      11,
+      10
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      11,
+      15
+    ]
+  ],
+  "words": [
+    {
+      "id": 1,
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 8,
+      "answer": "MALASADA",
+      "clue": "Specialità culinaria di Alola.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_1.jpg"
+    },
+    {
+      "id": 2,
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "answer": "MACHOKE",
+      "clue": "Il Pokémon Megaforza #67.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_1.jpg"
+    },
+    {
+      "id": 3,
+      "number": 7,
+      "direction": "across",
+      "row": 0,
+      "col": 9,
+      "length": 4,
+      "answer": "ARON",
+      "clue": "Il Pokémon Corazza #304, \"terrore\" di JustEmax.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_7.jpg"
+    },
+    {
+      "id": 4,
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "answer": "ABRA",
+      "clue": "Il Pokémon Psico #63.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_2.jpg"
+    },
+    {
+      "id": 5,
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 9,
+      "answer": "ARMAROUGE",
+      "clue": "Il Pokémon Guerrigneo di Paldea #936.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_3.jpg"
+    },
+    {
+      "id": 6,
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "answer": "STOMA",
+      "clue": "Presente negli organi aerei delle piante, consente lo scambio gassoso fra interno ed esterno del vegetale, in particolare favorisce l'entrata di anidride carbonica",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_4.jpg"
+    },
+    {
+      "id": 7,
+      "number": 5,
+      "direction": "down",
+      "row": 0,
+      "col": 5,
+      "length": 7,
+      "answer": "AURORUS",
+      "clue": "Il Pokémon Tundra #699.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_5.jpg"
+    },
+    {
+      "id": 8,
+      "number": 6,
+      "direction": "down",
+      "row": 0,
+      "col": 7,
+      "length": 3,
+      "answer": "ABN",
+      "clue": "Abnorme... per principio.",
+      "hint": false
+    },
+    {
+      "id": 9,
+      "number": 7,
+      "direction": "down",
+      "row": 0,
+      "col": 9,
+      "length": 2,
+      "answer": "AZ",
+      "clue": "Fu il Re di Kalos e il creatore dell'Arma Suprema.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_7.jpg"
+    },
+    {
+      "id": 10,
+      "number": 8,
+      "direction": "down",
+      "row": 0,
+      "col": 10,
+      "length": 2,
+      "answer": "RZ",
+      "clue": "Remato Zero (iniziali).",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_8.jpg"
+    },
+    {
+      "id": 11,
+      "number": 9,
+      "direction": "down",
+      "row": 0,
+      "col": 11,
+      "length": 2,
+      "answer": "OW",
+      "clue": "Oscar Wilde (iniziali).",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_9.jpg"
+    },
+    {
+      "id": 12,
+      "number": 10,
+      "direction": "down",
+      "row": 0,
+      "col": 12,
+      "length": 8,
+      "answer": "NOSEPASS",
+      "clue": "Il Pokémon Bussola #299.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_10.jpg"
+    },
+    {
+      "id": 13,
+      "number": 8,
+      "direction": "across",
+      "row": 0,
+      "col": 14,
+      "length": 2,
+      "answer": "MA",
+      "clue": "Magikarp... senza coda.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_8.jpg"
+    },
+    {
+      "id": 14,
+      "number": 11,
+      "direction": "down",
+      "row": 0,
+      "col": 14,
+      "length": 3,
+      "answer": "MEW",
+      "clue": "Il Pokémon Novaspecie #151.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_11.jpg"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 2,
+      "answer": "AB",
+      "clue": "La... testa di Absol.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_15.jpg"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "direction": "across",
+      "row": 1,
+      "col": 3,
+      "length": 3,
+      "answer": "RTU",
+      "clue": "Remote Terminal Unit.",
+      "hint": false
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "direction": "across",
+      "row": 1,
+      "col": 7,
+      "length": 8,
+      "answer": "BUZZWOLE",
+      "clue": "Il Pokémon Gonfiacorpo #794.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_17.jpg"
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "direction": "down",
+      "row": 1,
+      "col": 8,
+      "length": 2,
+      "answer": "UT",
+      "clue": "Il vecchio... DO.",
+      "hint": false
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "direction": "down",
+      "row": 1,
+      "col": 13,
+      "length": 10,
+      "answer": "LAVANDONIA",
+      "clue": "Città situata ad est di Kanto; collegata al Tunnel Roccioso a nord, al Percorso 8 ad ovest e al Percorso 12 a sud.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_19.jpg"
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "answer": "CRAMORANT",
+      "clue": "Il Pokémon Inghiottone #845.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_20.jpg"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "direction": "down",
+      "row": 2,
+      "col": 2,
+      "length": 2,
+      "answer": "AK",
+      "clue": "Ashton Kutcher (iniziali).",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_21.jpg"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "direction": "down",
+      "row": 2,
+      "col": 6,
+      "length": 3,
+      "answer": "AOI",
+      "clue": "Associazione Operaia Internazionale.",
+      "hint": false
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "direction": "across",
+      "row": 2,
+      "col": 12,
+      "length": 4,
+      "answer": "SAWK",
+      "clue": "Il Pokémon Karate #539.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_23.jpg"
+    },
+    {
+      "id": 24,
+      "number": 25,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 7,
+      "answer": "HAKAMOO",
+      "clue": "Il Pokémon Squama #783.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_25.jpg"
+    },
+    {
+      "id": 25,
+      "number": 26,
+      "direction": "across",
+      "row": 3,
+      "col": 11,
+      "length": 3,
+      "answer": "DEV",
+      "clue": "Il cuore... di Gardevoir.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_26.jpg"
+    },
+    {
+      "id": 26,
+      "number": 24,
+      "direction": "down",
+      "row": 2,
+      "col": 15,
+      "length": 3,
+      "answer": "KAA",
+      "clue": "Koala... senza pari.",
+      "hint": false
+    },
+    {
+      "id": 27,
+      "number": 27,
+      "direction": "across",
+      "row": 4,
+      "col": 3,
+      "length": 6,
+      "answer": "RARITA",
+      "clue": "Caratterizza ciò che è non comune nel suo genere oppure ciò che è poco frequente.",
+      "hint": false
+    },
+    {
+      "id": 28,
+      "number": 28,
+      "direction": "down",
+      "row": 4,
+      "col": 8,
+      "length": 6,
+      "answer": "APIICO",
+      "clue": "Papirologoico... senza prologo.",
+      "hint": false
+    },
+    {
+      "id": 29,
+      "number": 29,
+      "direction": "down",
+      "row": 4,
+      "col": 10,
+      "length": 5,
+      "answer": "SNIVY",
+      "clue": "Il Pokémon Serperba #495.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_29.jpg"
+    },
+    {
+      "id": 30,
+      "number": 30,
+      "direction": "across",
+      "row": 4,
+      "col": 12,
+      "length": 4,
+      "answer": "PARA",
+      "clue": "Mezzo paralume.",
+      "hint": false
+    },
+    {
+      "id": 31,
+      "number": 31,
+      "direction": "down",
+      "row": 4,
+      "col": 14,
+      "length": 2,
+      "answer": "RI",
+      "clue": "Roberto Insigne (iniziali).",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_31.jpg"
+    },
+    {
+      "id": 32,
+      "number": 32,
+      "direction": "across",
+      "row": 5,
+      "col": 0,
+      "length": 4,
+      "answer": "KOKO",
+      "clue": "Il 'figlio' di Zarude.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_32.jpg"
+    },
+    {
+      "id": 33,
+      "number": 33,
+      "direction": "down",
+      "row": 5,
+      "col": 1,
+      "length": 3,
+      "answer": "OAK",
+      "clue": "Vive e lavora nel suo suo laboratorio di Biancavilla.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_33.jpg"
+    },
+    {
+      "id": 34,
+      "number": 34,
+      "direction": "down",
+      "row": 5,
+      "col": 2,
+      "length": 6,
+      "answer": "KOMALA",
+      "clue": "Il Pokémon Dormiveglia #775.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_34.jpg"
+    },
+    {
+      "id": 35,
+      "number": 35,
+      "direction": "across",
+      "row": 5,
+      "col": 8,
+      "length": 7,
+      "answer": "PANTANI",
+      "clue": "Marco del ciclismo.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_35.jpg"
+    },
+    {
+      "id": 36,
+      "number": 36,
+      "direction": "down",
+      "row": 5,
+      "col": 11,
+      "length": 7,
+      "answer": "TAILLOW",
+      "clue": "Il Pokémon Rondine #276.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_36.jpg"
+    },
+    {
+      "id": 37,
+      "number": 37,
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 4,
+      "answer": "EAOU",
+      "clue": "European Association of Urology.",
+      "hint": false
+    },
+    {
+      "id": 38,
+      "number": 38,
+      "direction": "across",
+      "row": 6,
+      "col": 5,
+      "length": 4,
+      "answer": "SASI",
+      "clue": "Società Abruzzese per il Servizio Idrico.",
+      "hint": false
+    },
+    {
+      "id": 39,
+      "number": 39,
+      "direction": "down",
+      "row": 6,
+      "col": 7,
+      "length": 4,
+      "answer": "SLAT",
+      "clue": "In aeronautica sta ad indicare un ipersostentatore del bordo centrale di un’ala, detto anche alula, o aletta, ipersostentatrice.",
+      "hint": false
+    },
+    {
+      "id": 40,
+      "number": 40,
+      "direction": "across",
+      "row": 6,
+      "col": 10,
+      "length": 4,
+      "answer": "IASD",
+      "clue": "Istituto sugli Alti Studi per la Difesa.",
+      "hint": false
+    },
+    {
+      "id": 41,
+      "number": 41,
+      "direction": "down",
+      "row": 6,
+      "col": 15,
+      "length": 5,
+      "answer": "SESIA",
+      "clue": "Fiume del Vercellese (uno tra i più lunghi del Piemonte con i suoi 140 km), importante affluente di sinistra del Po.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_41.jpg"
+    },
+    {
+      "id": 42,
+      "number": 42,
+      "direction": "across",
+      "row": 7,
+      "col": 1,
+      "length": 3,
+      "answer": "KMG",
+      "clue": "Kraw Maga Global.",
+      "hint": false
+    },
+    {
+      "id": 43,
+      "number": 43,
+      "direction": "across",
+      "row": 7,
+      "col": 7,
+      "length": 2,
+      "answer": "LI",
+      "clue": "La \"testa\" di Lilligant, IL Pokémon Fiorfronzolo #549.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_43.jpg"
+    },
+    {
+      "id": 44,
+      "number": 44,
+      "direction": "across",
+      "row": 7,
+      "col": 10,
+      "length": 6,
+      "answer": "VISONE",
+      "clue": "Mustelide da pelliccia.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_44.jpg"
+    },
+    {
+      "id": 45,
+      "number": 45,
+      "direction": "down",
+      "row": 7,
+      "col": 14,
+      "length": 5,
+      "answer": "NACLI",
+      "clue": "Il Pokémon Salgemma #932.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_45.jpg"
+    },
+    {
+      "id": 46,
+      "number": 46,
+      "direction": "down",
+      "row": 8,
+      "col": 0,
+      "length": 4,
+      "answer": "IPOM",
+      "clue": "Aipom, il Pokémon Lungacoda... ma senza testa.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_46.jpg"
+    },
+    {
+      "id": 47,
+      "number": 47,
+      "direction": "across",
+      "row": 8,
+      "col": 2,
+      "length": 10,
+      "answer": "AERODACTYL",
+      "clue": "Il Pokémon Fossile #142.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_47.jpg"
+    },
+    {
+      "id": 48,
+      "number": 48,
+      "direction": "down",
+      "row": 8,
+      "col": 4,
+      "length": 4,
+      "answer": "REBO",
+      "clue": "Reboante... ma solo all'inizio.",
+      "hint": false
+    },
+    {
+      "id": 49,
+      "number": 49,
+      "direction": "down",
+      "row": 8,
+      "col": 5,
+      "length": 4,
+      "answer": "ODOR",
+      "clue": "Odorare... senza fine.",
+      "hint": false
+    },
+    {
+      "id": 50,
+      "number": 50,
+      "direction": "down",
+      "row": 8,
+      "col": 6,
+      "length": 3,
+      "answer": "DIK",
+      "clue": "Quelli di 'Sognando la California', ma solo a metà.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_50.jpg"
+    },
+    {
+      "id": 51,
+      "number": 51,
+      "direction": "down",
+      "row": 8,
+      "col": 9,
+      "length": 4,
+      "answer": "TRAM",
+      "clue": "Veicolo a propulsione elettrica per il trasporto di passeggeri, il cui percorso, su rotaia, si svolge totalmente o per la massima parte sulla sede stradale.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_51.jpg"
+    },
+    {
+      "id": 52,
+      "number": 52,
+      "direction": "across",
+      "row": 8,
+      "col": 13,
+      "length": 3,
+      "answer": "NAS",
+      "clue": "Network Attached Storage... oppure Nucleo Anti Sofisticazioni dei Carabinieri.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_52.jpg"
+    },
+    {
+      "id": 53,
+      "number": 53,
+      "direction": "across",
+      "row": 9,
+      "col": 0,
+      "length": 3,
+      "answer": "PAL",
+      "clue": "La regione di 9ª generazione... ma solo all'inizio.",
+      "hint": false
+    },
+    {
+      "id": 54,
+      "number": 54,
+      "direction": "across",
+      "row": 9,
+      "col": 4,
+      "length": 6,
+      "answer": "EDITOR",
+      "clue": "Generalmente indica un redattore o un curatore editoriale ma non il publisher. In informatica è un programma di modifica di testo o immagini.",
+      "hint": false
+    },
+    {
+      "id": 55,
+      "number": 55,
+      "direction": "across",
+      "row": 9,
+      "col": 11,
+      "length": 5,
+      "answer": "LAICI",
+      "clue": "Per il diritto canonico ed ecclesiastico costituiscono, insieme con gli ecclesiastici, una delle due grandi classi degli appartenenti alla Chiesa Cattolica.",
+      "hint": false
+    },
+    {
+      "id": 56,
+      "number": 56,
+      "direction": "down",
+      "row": 9,
+      "col": 12,
+      "length": 3,
+      "answer": "AMO",
+      "clue": "La testa del Pokémon Fungo #591.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_56.jpg"
+    },
+    {
+      "id": 57,
+      "number": 57,
+      "direction": "across",
+      "row": 10,
+      "col": 2,
+      "length": 5,
+      "answer": "ARBOK",
+      "clue": "Il Pokémon Cobra #24.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_57.jpg"
+    },
+    {
+      "id": 58,
+      "number": 58,
+      "direction": "down",
+      "row": 10,
+      "col": 3,
+      "length": 2,
+      "answer": "RH",
+      "clue": "La \"testa\" di Rhydon, il Pokémon Trapanmo #112... oppure indica il fattore del gruppo sanguigno.",
+      "hint": true,
+      "image": "/public/assets/pokemon/v_58.jpg"
+    },
+    {
+      "id": 59,
+      "number": 59,
+      "direction": "across",
+      "row": 10,
+      "col": 9,
+      "length": 7,
+      "answer": "ANOMALA",
+      "clue": "Straordinaria, fuori dall'ordinario, non conforme alla norma.",
+      "hint": false
+    },
+    {
+      "id": 60,
+      "number": 60,
+      "direction": "across",
+      "row": 11,
+      "col": 0,
+      "length": 2,
+      "answer": "MT",
+      "clue": "Non se ne hanno mai abbastanza di... Macchine Tecniche.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_60.jpg"
+    },
+    {
+      "id": 61,
+      "number": 61,
+      "direction": "across",
+      "row": 11,
+      "col": 3,
+      "length": 3,
+      "answer": "HOR",
+      "clue": "Il preferito di Misty... ma solo metà.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_61.jpg"
+    },
+    {
+      "id": 62,
+      "number": 62,
+      "direction": "across",
+      "row": 11,
+      "col": 7,
+      "length": 3,
+      "answer": "SAM",
+      "clue": "Un giovane allenatore di Pokémon, trasportato 'casualmente' da Celebi, nel presente di Ash da 40 anni nel passato.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_62.jpg"
+    },
+    {
+      "id": 63,
+      "number": 63,
+      "direction": "across",
+      "row": 11,
+      "col": 11,
+      "length": 2,
+      "answer": "WO",
+      "clue": "La \"testa\" di Wooper, il Pokémon Acquapesce #194.",
+      "hint": true,
+      "image": "/public/assets/pokemon/o_63.jpg"
+    }
+  ]
+}
