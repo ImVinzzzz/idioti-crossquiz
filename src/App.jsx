@@ -12,6 +12,12 @@ const HAZARD_MALUS_PTS = 50;
 const WRONG_ANSWER_PTS = 5;
 const COLORS = ["#1D6FD3","#D85A30","#1D9E75","#884AB7","#BA7517","#A32D2D"];
 
+// ─── UTILITIES ──────────────────────────────────────────────────────────────
+function cleanAssetPath(path) {
+  if (!path) return "";
+  return path.replace(/^\/?public\//, "/");
+}
+
 // ─── GRID UTILITIES ─────────────────────────────────────────────────────────
 function buildGridMap(gameData) {
   const map = {};
@@ -553,7 +559,7 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
             {currentCard.hint && !hintRevealed ? (
               <div className="hint-area">
                 <div className="hint-image-placeholder">
-                  <img src={"/assets/" + currentCard.image.replace(/^\/public\/assets\//, "").replace(/^\/assets\//, "")} alt="Hint" onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
+                  <img src={cleanAssetPath(currentCard.image)} alt="Hint" onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
                   <div className="hint-fallback" style={{ display:"none" }}>{"Hint: " + currentCard.image}</div>
                 </div>
                 <button className="btn-reveal" onClick={() => setHintRevealed(true)}>Rivela Testo</button>
@@ -635,9 +641,11 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
           <div className={"hazard-modal-content hazard-" + currentCard.type}>
             <img
               src={
-                currentCard.type === "bonus"
-                  ? (gameData.meta.hazard_bonus || "/assets/bonus.svg")
-                  : (gameData.meta.hazard_malus || "/assets/malus.svg")
+                cleanAssetPath(
+                  currentCard.type === "bonus"
+                    ? (gameData.meta.hazard_bonus || "/assets/bonus.svg")
+                    : (gameData.meta.hazard_malus || "/assets/malus.svg")
+                )
               }
               alt={currentCard.type}
               className="hazard-modal-img"

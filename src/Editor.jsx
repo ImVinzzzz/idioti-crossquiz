@@ -8,8 +8,8 @@ export default function Editor({ suChiudi }) {
   const [definizioni, setDefinizioni] = useState([]);
   const [tabAttivo, setTabAttivo] = useState("across"); // across | down
   const [definizioneSelezionataId, setDefinizioneSelezionataId] = useState(null);
-  const [hazardBonus, setHazardBonus] = useState("/public/assets/nuovo_schema/bonus.svg");
-  const [hazardMalus, setHazardMalus] = useState("/public/assets/nuovo_schema/malus.svg");
+  const [hazardBonus, setHazardBonus] = useState("/assets/nuovo_schema/bonus.svg");
+  const [hazardMalus, setHazardMalus] = useState("/assets/nuovo_schema/malus.svg");
 
   // Generatore di ID progressivi automatici
   const ottieniProssimoId = () => {
@@ -88,7 +88,7 @@ export default function Editor({ suChiudi }) {
         if (usaHint) {
           const cartella = nomeCruciverba ? nomeCruciverba : "default";
           const letteraDirezione = dirDef === "across" ? "o" : "v";
-          defModificata.image = "/public/assets/" + cartella + "/" + letteraDirezione + "_" + numDef + ".jpg";
+          defModificata.image = "/assets/" + cartella + "/" + letteraDirezione + "_" + numDef + ".jpg";
         } else {
           defModificata.image = "";
         }
@@ -103,8 +103,8 @@ export default function Editor({ suChiudi }) {
   // Ricalcola i percorsi delle immagini per tutte le definizioni quando cambia il nome del cruciverba
   useEffect(() => {
     const cartella = nomeCruciverba ? nomeCruciverba : "default";
-    setHazardBonus("/public/assets/" + cartella + "/bonus.svg");
-    setHazardMalus("/public/assets/" + cartella + "/malus.svg");
+    setHazardBonus("/assets/" + cartella + "/bonus.svg");
+    setHazardMalus("/assets/" + cartella + "/malus.svg");
 
     setDefinizioni(function (prev) {
       return prev.map(function (d) {
@@ -112,7 +112,7 @@ export default function Editor({ suChiudi }) {
           const letteraDirezione = d.direction === "across" ? "o" : "v";
           return {
             ...d,
-            image: "/public/assets/" + cartella + "/" + letteraDirezione + "_" + d.number + ".jpg"
+            image: "/assets/" + cartella + "/" + letteraDirezione + "_" + d.number + ".jpg"
           };
         }
         return d;
@@ -347,7 +347,7 @@ export default function Editor({ suChiudi }) {
                   type="text"
                   value={hazardBonus}
                   onChange={function (e) { setHazardBonus(e.target.value); }}
-                  placeholder="/public/assets/default/bonus.svg"
+                  placeholder="/assets/default/bonus.svg"
                 />
               </div>
               <div className="editor-campo">
@@ -356,7 +356,7 @@ export default function Editor({ suChiudi }) {
                   type="text"
                   value={hazardMalus}
                   onChange={function (e) { setHazardMalus(e.target.value); }}
-                  placeholder="/public/assets/default/malus.svg"
+                  placeholder="/assets/default/malus.svg"
                 />
               </div>
             </div>
