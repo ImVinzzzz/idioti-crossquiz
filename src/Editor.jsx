@@ -8,6 +8,8 @@ export default function Editor({ suChiudi }) {
   const [definizioni, setDefinizioni] = useState([]);
   const [tabAttivo, setTabAttivo] = useState("across"); // across | down
   const [definizioneSelezionataId, setDefinizioneSelezionataId] = useState(null);
+  const [hazardBonus, setHazardBonus] = useState("/public/assets/nuovo_schema/bonus.svg");
+  const [hazardMalus, setHazardMalus] = useState("/public/assets/nuovo_schema/malus.svg");
 
   // Generatore di ID progressivi automatici
   const ottieniProssimoId = () => {
@@ -100,10 +102,13 @@ export default function Editor({ suChiudi }) {
 
   // Ricalcola i percorsi delle immagini per tutte le definizioni quando cambia il nome del cruciverba
   useEffect(() => {
+    const cartella = nomeCruciverba ? nomeCruciverba : "default";
+    setHazardBonus("/public/assets/" + cartella + "/bonus.svg");
+    setHazardMalus("/public/assets/" + cartella + "/malus.svg");
+
     setDefinizioni(function (prev) {
       return prev.map(function (d) {
         if (d.hint) {
-          const cartella = nomeCruciverba ? nomeCruciverba : "default";
           const letteraDirezione = d.direction === "across" ? "o" : "v";
           return {
             ...d,
@@ -192,7 +197,9 @@ export default function Editor({ suChiudi }) {
       meta: {
         title: "Cruciverba " + nomeCruciverba,
         gridRows: righe,
-        gridCols: colonne
+        gridCols: colonne,
+        hazard_bonus: hazardBonus,
+        hazard_malus: hazardMalus
       },
       blackCells: calcolaCaselleNereJSON(),
       words: definizioni.map(function (d) {
@@ -252,6 +259,8 @@ export default function Editor({ suChiudi }) {
           setNomeCruciverba(titoloPuro);
           setRighe(schemaImportato.meta.gridRows || 14);
           setColonne(schemaImportato.meta.gridCols || 13);
+          setHazardBonus(schemaImportato.meta.hazard_bonus || "");
+          setHazardMalus(schemaImportato.meta.hazard_malus || "");
         }
         
         if (Array.isArray(schemaImportato.words)) {
@@ -327,6 +336,27 @@ export default function Editor({ suChiudi }) {
                   max="30"
                   value={colonne}
                   onChange={function (e) { setColonne(parseInt(e.target.value, 10) || 3); }}
+                />
+              </div>
+            </div>
+            
+            <div className="editor-campi-generali" style={{ marginTop: "12px", gridTemplateColumns: "1fr 1fr" }}>
+              <div className="editor-campo">
+                <label>Immagine Hazard Bonus</label>
+                <input
+                  type="text"
+                  value={hazardBonus}
+                  onChange={function (e) { setHazardBonus(e.target.value); }}
+                  placeholder="/public/assets/default/bonus.svg"
+                />
+              </div>
+              <div className="editor-campo">
+                <label>Immagine Hazard Malus</label>
+                <input
+                  type="text"
+                  value={hazardMalus}
+                  onChange={function (e) { setHazardMalus(e.target.value); }}
+                  placeholder="/public/assets/default/malus.svg"
                 />
               </div>
             </div>

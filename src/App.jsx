@@ -7,8 +7,8 @@ const JOKER_INVENTORY = { x2: 2, x3: 2, x4: 1 };
 const JOKER_VALUES = { x2: 2, x3: 3, x4: 4 };
 const TIMER_JOKER = 20;
 const TIMER_ANSWER = 90;
-const HAZARD_SANTO_PTS = 50;
-const HAZARD_IDIOTA_PTS = 50;
+const HAZARD_BONUS_PTS = 50;
+const HAZARD_MALUS_PTS = 50;
 const WRONG_ANSWER_PTS = 5;
 const COLORS = ["#1D6FD3","#D85A30","#1D9E75","#884AB7","#BA7517","#A32D2D"];
 
@@ -55,10 +55,10 @@ function normalizeAnswer(str) {
 // ─── HAZARD DECK ─────────────────────────────────────────────────────────────
 function buildHazardDeck(numPlayers) {
   const deck = [];
-  const santos = numPlayers + 1;
-  const idiots = numPlayers + 1;
-  for (let i = 0; i < santos; i++) deck.push({ type: "santo" });
-  for (let i = 0; i < idiots; i++) deck.push({ type: "idiota" });
+  const bonuses = numPlayers + 1;
+  const maluses = numPlayers + 1;
+  for (let i = 0; i < bonuses; i++) deck.push({ type: "bonus" });
+  for (let i = 0; i < maluses; i++) deck.push({ type: "malus" });
   return deck;
 }
 
@@ -283,15 +283,15 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
 
       // Apply hazard points
       setPlayers(prev => prev.map((p, i) => {
-        if (hazard.type === "santo") return i === currentPlayerIdx ? { ...p, score: p.score + HAZARD_SANTO_PTS } : p;
-        else return i !== currentPlayerIdx ? { ...p, score: p.score + HAZARD_IDIOTA_PTS } : p;
+        if (hazard.type === "bonus") return i === currentPlayerIdx ? { ...p, score: p.score + HAZARD_BONUS_PTS } : p;
+        else return i !== currentPlayerIdx ? { ...p, score: p.score + HAZARD_MALUS_PTS } : p;
       }));
 
       showToast(
-        hazard.type === "santo"
-          ? `⚡ SANTO! +${HAZARD_SANTO_PTS} pt a ${currentPlayer.name}`
-          : `💀 IDIOTA! +${HAZARD_IDIOTA_PTS} pt a tutti gli avversari`,
-        hazard.type === "santo" ? "success" : "danger"
+        hazard.type === "bonus"
+          ? "⚡ BONUS! +" + HAZARD_BONUS_PTS + " pt a " + currentPlayer.name
+          : "💀 MALUS! +" + HAZARD_MALUS_PTS + " pt a tutti gli avversari",
+        hazard.type === "bonus" ? "success" : "danger"
       );
       setPhase("showing_result");
       setTimeout(() => { advanceTurn(); setPhase("idle"); setCurrentCard(null); }, 3000);
@@ -634,14 +634,18 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
         <div className="hazard-modal-overlay">
           <div className={"hazard-modal-content hazard-" + currentCard.type}>
             <img
-              src={currentCard.type === "santo" ? "/assets/santo.svg" : "/assets/idiota.svg"}
+              src={
+                currentCard.type === "bonus"
+                  ? (gameData.meta.hazard_bonus || "/assets/bonus.svg")
+                  : (gameData.meta.hazard_malus || "/assets/malus.svg")
+              }
               alt={currentCard.type}
               className="hazard-modal-img"
             />
             <div className="hazard-modal-text">
-              {currentCard.type === "santo"
-                ? "Santo! +" + HAZARD_SANTO_PTS + " pt a " + players[currentPlayerIdx].name
-                : "Idiota! +" + HAZARD_IDIOTA_PTS + " pt a tutti gli avversari"}
+              {currentCard.type === "bonus"
+                ? "Bonus! +" + HAZARD_BONUS_PTS + " pt a " + players[currentPlayerIdx].name
+                : "Malus! +" + HAZARD_MALUS_PTS + " pt a tutti gli avversari"}
             </div>
           </div>
         </div>
