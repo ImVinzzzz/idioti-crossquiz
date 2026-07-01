@@ -3,8 +3,8 @@
         "title": "Santini",
         "gridRows": 9,
         "gridCols": 12,
-        "hazard_bonus": "/public/assets/Santini/bonus.svg",
-        "hazard_malus": "/public/assets/Santini/malus.svg"
+        "hazard_bonus": "/assets/Santini/bonus.svg",
+        "hazard_malus": "/assets/Santini/malus.svg"
     },
     "blackCells": [
         [
@@ -95,7 +95,7 @@
             "answer": "AGNESE",
             "clue": "La Santa del 21 gennaio... suocera del Lorenzo manzoniano",
             "hint": true,
-            "image": "/public/assets/Santini/o_1.jpg"
+            "image": "/assets/Santini/o_1.jpg"
         },
         {
             "id": 2,
@@ -107,7 +107,7 @@
             "answer": "LUCIA",
             "clue": "La Santa, Vergine e Martire, celebrata il 13 dicembre... che è anche personaggio manzoniano che trova asilo nella dimora di Don Ferrante e donna Prassede.",
             "hint": true,
-            "image": "/public/assets/Santini/o_7.jpg"
+            "image": "/assets/Santini/o_7.jpg"
         },
         {
             "id": 3,
@@ -119,7 +119,7 @@
             "answer": "SECONDOPOLLO",
             "clue": "Presbitero e militare italiano, appartenente al corpo degli alpini, medaglia d'argento al valor militare. Venerato come Beato dalla Chiesa cattolica. Commemorato il 26 dicembre.",
             "hint": true,
-            "image": "/public/assets/Santini/o_12.jpg"
+            "image": "/assets/Santini/o_12.jpg"
         },
         {
             "id": 4,
@@ -131,7 +131,7 @@
             "answer": "FIONA",
             "clue": "Moglie dell'orco Shrek",
             "hint": true,
-            "image": "/public/assets/Santini/o_14.jpg"
+            "image": "/assets/Santini/o_14.jpg"
         },
         {
             "id": 5,
@@ -154,7 +154,7 @@
             "answer": "METROBIO",
             "clue": "Il Santo del 24 dicembre... venerato a Malesco.",
             "hint": true,
-            "image": "/public/assets/Santini/o_16.jpg"
+            "image": "/assets/Santini/o_16.jpg"
         },
         {
             "id": 7,
@@ -199,7 +199,7 @@
             "answer": "EUR",
             "clue": "Treantaduesimo quartiere di Roma che ospita il Palazzo della Civiltà Italiana.",
             "hint": true,
-            "image": "/public/assets/Santini/o_23.jpg"
+            "image": "/assets/Santini/o_23.jpg"
         },
         {
             "id": 11,
@@ -255,7 +255,7 @@
             "answer": "CANOA",
             "clue": "Piccola imbarcazione, di forma stretta e allungata, con le estremità affusolate, a fianchi ricurvi, costruita in materiale leggero, che viene manovrata con la pagaia da un solo vogatore o al massimo da due.",
             "hint": true,
-            "image": "/public/assets/Santini/o_31.jpg"
+            "image": "/assets/Santini/o_31.jpg"
         },
         {
             "id": 16,
@@ -278,7 +278,7 @@
             "answer": "SABA",
             "clue": "Il Santo Archimandrita di Cesarea, commemorato il 5 dicembre... e poeta triestino vissuto tra il 1883 e il 1957.",
             "hint": true,
-            "image": "/public/assets/Santini/o_35.jpg"
+            "image": "/assets/Santini/o_35.jpg"
         },
         {
             "id": 18,
@@ -290,7 +290,7 @@
             "answer": "ASFODELI",
             "clue": "Piante erbacee della famiglia delle Liliacee... per Omero erano i fiori degli inferi.",
             "hint": true,
-            "image": "/public/assets/Santini/v_1.jpg"
+            "image": "/assets/Santini/v_1.jpg"
         },
         {
             "id": 19,
@@ -324,7 +324,7 @@
             "answer": "EONE",
             "clue": "Divinità greca, personificazione del Tempo, corrispondente al Saturno latino... oppure a un miliardo di anni.",
             "hint": true,
-            "image": "/public/assets/Santini/v_4.jpg"
+            "image": "/assets/Santini/v_4.jpg"
         },
         {
             "id": 22,
@@ -369,7 +369,7 @@
             "answer": "UOMINI",
             "clue": "Secondo la Treccani sono: esseri coscienti e responsabili dei propri atti, capaci di distaccarsi dal mondo organico oggettivandolo e servendosene per i propri fini.",
             "hint": true,
-            "image": "/public/assets/Santini/v_8.jpg"
+            "image": "/assets/Santini/v_8.jpg"
         },
         {
             "id": 26,
@@ -392,7 +392,7 @@
             "answer": "ILA",
             "clue": "Raganella verde.",
             "hint": true,
-            "image": "/public/assets/Santini/v_10.jpg"
+            "image": "/assets/Santini/v_10.jpg"
         },
         {
             "id": 28,
@@ -415,7 +415,7 @@
             "answer": "ORONZO",
             "clue": "Quello di Lecce, fatto Santo, è celebrato il 26 agosto... il Mago, invece, è Raul Cremona sotto mentite spoglie... e quello della foto è l'allenatore della Longobarda.",
             "hint": true,
-            "image": "/public/assets/Santini/v_13.jpg"
+            "image": "/assets/Santini/v_13.jpg"
         },
         {
             "id": 30,

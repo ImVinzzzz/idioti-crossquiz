@@ -3,8 +3,8 @@
     "title": "Santi & Idioti Cross Quiz",
     "gridRows": 14,
     "gridCols": 13,
-    "hazard_bonus": "/public/assets/schema1/bonus.svg",
-    "hazard_malus": "/public/assets/schema1/malus.svg"
+    "hazard_bonus": "/assets/schema1/bonus.svg",
+    "hazard_malus": "/assets/schema1/malus.svg"
   },
   "blackCells": [
     [
@@ -162,7 +162,7 @@
       "answer": "ROMBO",
       "clue": "Pesce che è anche un parallelogrammo con i lati della stessa lunghezza",
       "hint": true,
-      "image": "/public/assets/schema1/s1_12o.jpg"
+      "image": "/assets/schema1/s1_12o.jpg"
     },
     {
       "id": 3,
@@ -174,7 +174,7 @@
       "answer": "DELFINO",
       "clue": "Il santo del 24 dicembre... che è anche un mammifero acquatico",
       "hint": true,
-      "image": "/public/assets/schema1/s1_13o.jpg"
+      "image": "/assets/schema1/s1_13o.jpg"
     },
     {
       "id": 4,
@@ -186,7 +186,7 @@
       "answer": "SAURO",
       "clue": "Pesce, rettile e manto equino",
       "hint": true,
-      "image": "/public/assets/schema1/s1_15o.jpg"
+      "image": "/assets/schema1/s1_15o.jpg"
     },
     {
       "id": 5,
@@ -198,7 +198,7 @@
       "answer": "ELI",
       "clue": "Sommo sacerdote di Silo, il penultimo dei giudici israeliti, predecessore di Samuele. Ma anche principio di elicottero.",
       "hint": true,
-      "image": "/public/assets/schema1/s1_16o.jpg"
+      "image": "/assets/schema1/s1_16o.jpg"
     },
     {
       "id": 6,
@@ -243,7 +243,7 @@
       "answer": "ZOO",
       "clue": "Esposizione al pubblico di animali esotici",
       "hint": true,
-      "image": "/public/assets/schema1/s1_20o.jpg"
+      "image": "/assets/schema1/s1_20o.jpg"
     },
     {
       "id": 10,
@@ -255,7 +255,7 @@
       "answer": "CLARA",
       "clue": "Compagna di avventure della piccola Heidi",
       "hint": true,
-      "image": "/public/assets/schema1/s1_21o.jpg"
+      "image": "/assets/schema1/s1_21o.jpg"
     },
     {
       "id": 11,
@@ -289,7 +289,7 @@
       "answer": "ALEF",
       "clue": "Prima lettera dell'alfabeto ebraico",
       "hint": true,
-      "image": "/public/assets/schema1/s1_24o.jpg"
+      "image": "/assets/schema1/s1_24o.jpg"
     },
     {
       "id": 14,
@@ -301,7 +301,7 @@
       "answer": "PINO",
       "clue": "Conifera che può essere mugo, marittimo, silvestre...",
       "hint": true,
-      "image": "/public/assets/schema1/s1_26o.jpg"
+      "image": "/assets/schema1/s1_26o.jpg"
     },
     {
       "id": 15,
@@ -335,7 +335,7 @@
       "answer": "BONN",
       "clue": "Città tedesca sul Reno che ha dato i natali a Beethoven",
       "hint": true,
-      "image": "/public/assets/schema1/s1_31o.jpg"
+      "image": "/assets/schema1/s1_31o.jpg"
     },
     {
       "id": 18,
@@ -358,7 +358,7 @@
       "answer": "RENZO",
       "clue": "Nome di un protagonista manzoniano",
       "hint": true,
-      "image": "/public/assets/schema1/s1_34o.jpg"
+      "image": "/assets/schema1/s1_34o.jpg"
     },
     {
       "id": 20,
@@ -381,7 +381,7 @@
       "answer": "BIA",
       "clue": "La maghetta protagonista di un anime di Makiko Narita",
       "hint": true,
-      "image": "/public/assets/schema1/s1_37o.jpg"
+      "image": "/assets/schema1/s1_37o.jpg"
     },
     {
       "id": 22,
@@ -404,7 +404,7 @@
       "answer": "ATP",
       "clue": "Adenosina trifosfato",
       "hint": true,
-      "image": "/public/assets/schema1/s1_40o.jpg"
+      "image": "/assets/schema1/s1_40o.jpg"
     },
     {
       "id": 24,
@@ -427,7 +427,7 @@
       "answer": "TRONI",
       "clue": "Sedute... di re e regine",
       "hint": true,
-      "image": "/public/assets/schema1/s1_46o.jpg"
+      "image": "/assets/schema1/s1_46o.jpg"
     },
     {
       "id": 26,
@@ -450,7 +450,7 @@
       "answer": "IRIS",
       "clue": "Dea greca dell'arcobaleno",
       "hint": true,
-      "image": "/public/assets/schema1/s1_50o.jpg"
+      "image": "/assets/schema1/s1_50o.jpg"
     },
     {
       "id": 28,
@@ -462,7 +462,7 @@
       "answer": "NEON",
       "clue": "Gas nobile... utilizzato nelle insegne",
       "hint": true,
-      "image": "/public/assets/schema1/s1_51o.jpg"
+      "image": "/assets/schema1/s1_51o.jpg"
     },
     {
       "id": 29,
@@ -474,7 +474,7 @@
       "answer": "LUCIDO",
       "clue": "Il santo di Aquara, ricordato il 5 dicembre. QUllo da scarpe, serve a prendersene cura.",
       "hint": true,
-      "image": "/public/assets/schema1/s1_52o.jpg"
+      "image": "/assets/schema1/s1_52o.jpg"
     },
     {
       "id": 30,
@@ -486,7 +486,7 @@
       "answer": "EDVIGE",
       "clue": "La Santa Duchessa di Slesia e di Polonia ricordata il 16 ottobre... l'attrice, invece, è la Fenech.",
       "hint": true,
-      "image": "/public/assets/schema1/s1_54o.jpg"
+      "image": "/assets/schema1/s1_54o.jpg"
     },
     {
       "id": 31,
@@ -498,7 +498,7 @@
       "answer": "ORSOLA",
       "clue": "Fanciulla di rara bellezza, figlia di un re di Britagna. Tra le sue compagne di martirio: Saturia, Saula, Brittola...",
       "hint": true,
-      "image": "/public/assets/schema1/s1_1v.jpg"
+      "image": "/assets/schema1/s1_1v.jpg"
     },
     {
       "id": 32,
@@ -532,7 +532,7 @@
       "answer": "EBRULFO",
       "clue": "Santo eremita vissuto in Normandia nel VI sec., ricordato il 29 dicembre",
       "hint": true,
-      "image": "/public/assets/schema1/s1_4v.jpg"
+      "image": "/assets/schema1/s1_4v.jpg"
     },
     {
       "id": 35,
@@ -555,7 +555,7 @@
       "answer": "ADELAIDE",
       "clue": "Santa Imperatrice, vedova di Lotario II e poi moglie di Ottone I, commemorata il 16 dicembre. Vero nome della Heidy dei cartoni animati.",
       "hint": true,
-      "image": "/public/assets/schema1/s1_6v.jpg"
+      "image": "/assets/schema1/s1_6v.jpg"
     },
     {
       "id": 37,
@@ -567,7 +567,7 @@
       "answer": "BELL",
       "clue": "Ingegnere e inventore di origine scozzese che per primo brevettò il telefono.",
       "hint": true,
-      "image": "/public/assets/schema1/s1_7v.jpg"
+      "image": "/assets/schema1/s1_7v.jpg"
     },
     {
       "id": 38,
@@ -579,7 +579,7 @@
       "answer": "ELIGIO",
       "clue": "Santo Vescovo di Francia ricordato il primo dicembre",
       "hint": true,
-      "image": "/public/assets/schema1/s1_8v.jpg"
+      "image": "/assets/schema1/s1_8v.jpg"
     },
     {
       "id": 39,
@@ -591,7 +591,7 @@
       "answer": "RF",
       "clue": "Riccardo Fogli",
       "hint": true,
-      "image": "/public/assets/schema1/s1_9v.jpg"
+      "image": "/assets/schema1/s1_9v.jpg"
     },
     {
       "id": 40,
@@ -614,7 +614,7 @@
       "answer": "INNOCENZO",
       "clue": "Nome di 13 papi",
       "hint": true,
-      "image": "/public/assets/schema1/s1_11v.jpg"
+      "image": "/assets/schema1/s1_11v.jpg"
     },
     {
       "id": 42,
@@ -626,7 +626,7 @@
       "answer": "OMOBONO",
       "clue": "Santo di Cremona, ricordato il 13 novembre",
       "hint": true,
-      "image": "/public/assets/schema1/s1_14v.jpg"
+      "image": "/assets/schema1/s1_14v.jpg"
     },
     {
       "id": 43,
@@ -638,7 +638,7 @@
       "answer": "ERPICE",
       "clue": "Macchina agricola, detta anche frangizolle",
       "hint": true,
-      "image": "/public/assets/schema1/s1_19v.jpg"
+      "image": "/assets/schema1/s1_19v.jpg"
     },
     {
       "id": 44,
@@ -650,7 +650,7 @@
       "answer": "CELESTINOV",
       "clue": "Il papa del «gran rifiuto» dantesco",
       "hint": true,
-      "image": "/public/assets/schema1/s1_21v.jpg"
+      "image": "/assets/schema1/s1_21v.jpg"
     },
     {
       "id": 45,
@@ -684,7 +684,7 @@
       "answer": "RON",
       "clue": "Nome d'arte di Rosalino Cellamare",
       "hint": true,
-      "image": "/public/assets/schema1/s1_28v.jpg"
+      "image": "/assets/schema1/s1_28v.jpg"
     },
     {
       "id": 48,
@@ -718,7 +718,7 @@
       "answer": "BIBIANA",
       "clue": "Santa martire, celebrata il 2 dicembre",
       "hint": true,
-      "image": "/public/assets/schema1/s1_32v.jpg"
+      "image": "/assets/schema1/s1_32v.jpg"
     },
     {
       "id": 51,
@@ -774,7 +774,7 @@
       "answer": "RISO",
       "clue": "Cereale molto diffuso in India",
       "hint": true,
-      "image": "/public/assets/schema1/s1_42v.jpg"
+      "image": "/assets/schema1/s1_42v.jpg"
     },
     {
       "id": 56,
@@ -808,7 +808,7 @@
       "answer": "NIDO",
       "clue": "Casa per uccelli",
       "hint": true,
-      "image": "/public/assets/schema1/s1_47v.jpg"
+      "image": "/assets/schema1/s1_47v.jpg"
     },
     {
       "id": 59,

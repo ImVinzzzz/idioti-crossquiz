@@ -3,8 +3,8 @@
     "title": "Cruciverba pokemon",
     "gridRows": 12,
     "gridCols": 16,
-    "hazard_bonus": "/public/assets/pokemon/bonus.svg",
-    "hazard_malus": "/public/assets/pokemon/malus.svg"
+    "hazard_bonus": "/assets/pokemon/bonus.svg",
+    "hazard_malus": "/assets/pokemon/malus.svg"
   },
   "blackCells": [
     [
@@ -183,7 +183,7 @@
       "answer": "MALASADA",
       "clue": "Specialità culinaria di Alola.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_1.jpg"
+      "image": "/assets/pokemon/o_1.jpg"
     },
     {
       "id": 2,
@@ -195,7 +195,7 @@
       "answer": "MACHOKE",
       "clue": "Il Pokémon Megaforza #67.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_1.jpg"
+      "image": "/assets/pokemon/v_1.jpg"
     },
     {
       "id": 3,
@@ -207,7 +207,7 @@
       "answer": "ARON",
       "clue": "Il Pokémon Corazza #304, \"terrore\" di JustEmax.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_7.jpg"
+      "image": "/assets/pokemon/o_7.jpg"
     },
     {
       "id": 4,
@@ -219,7 +219,7 @@
       "answer": "ABRA",
       "clue": "Il Pokémon Psico #63.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_2.jpg"
+      "image": "/assets/pokemon/v_2.jpg"
     },
     {
       "id": 5,
@@ -231,7 +231,7 @@
       "answer": "ARMAROUGE",
       "clue": "Il Pokémon Guerrigneo di Paldea #936.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_3.jpg"
+      "image": "/assets/pokemon/v_3.jpg"
     },
     {
       "id": 6,
@@ -243,7 +243,7 @@
       "answer": "STOMA",
       "clue": "Presente negli organi aerei delle piante, consente lo scambio gassoso fra interno ed esterno del vegetale, in particolare favorisce l'entrata di anidride carbonica",
       "hint": true,
-      "image": "/public/assets/pokemon/v_4.jpg"
+      "image": "/assets/pokemon/v_4.jpg"
     },
     {
       "id": 7,
@@ -255,7 +255,7 @@
       "answer": "AURORUS",
       "clue": "Il Pokémon Tundra #699.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_5.jpg"
+      "image": "/assets/pokemon/v_5.jpg"
     },
     {
       "id": 8,
@@ -278,7 +278,7 @@
       "answer": "AZ",
       "clue": "Fu il Re di Kalos e il creatore dell'Arma Suprema.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_7.jpg"
+      "image": "/assets/pokemon/v_7.jpg"
     },
     {
       "id": 10,
@@ -290,7 +290,7 @@
       "answer": "RZ",
       "clue": "Remato Zero (iniziali).",
       "hint": true,
-      "image": "/public/assets/pokemon/v_8.jpg"
+      "image": "/assets/pokemon/v_8.jpg"
     },
     {
       "id": 11,
@@ -302,7 +302,7 @@
       "answer": "OW",
       "clue": "Oscar Wilde (iniziali).",
       "hint": true,
-      "image": "/public/assets/pokemon/v_9.jpg"
+      "image": "/assets/pokemon/v_9.jpg"
     },
     {
       "id": 12,
@@ -314,7 +314,7 @@
       "answer": "NOSEPASS",
       "clue": "Il Pokémon Bussola #299.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_10.jpg"
+      "image": "/assets/pokemon/v_10.jpg"
     },
     {
       "id": 13,
@@ -326,7 +326,7 @@
       "answer": "MA",
       "clue": "Magikarp... senza coda.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_8.jpg"
+      "image": "/assets/pokemon/o_8.jpg"
     },
     {
       "id": 14,
@@ -338,7 +338,7 @@
       "answer": "MEW",
       "clue": "Il Pokémon Novaspecie #151.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_11.jpg"
+      "image": "/assets/pokemon/v_11.jpg"
     },
     {
       "id": 15,
@@ -350,7 +350,7 @@
       "answer": "AB",
       "clue": "La... testa di Absol.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_15.jpg"
+      "image": "/assets/pokemon/o_15.jpg"
     },
     {
       "id": 16,
@@ -373,7 +373,7 @@
       "answer": "BUZZWOLE",
       "clue": "Il Pokémon Gonfiacorpo #794.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_17.jpg"
+      "image": "/assets/pokemon/o_17.jpg"
     },
     {
       "id": 18,
@@ -396,7 +396,7 @@
       "answer": "LAVANDONIA",
       "clue": "Città situata ad est di Kanto; collegata al Tunnel Roccioso a nord, al Percorso 8 ad ovest e al Percorso 12 a sud.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_19.jpg"
+      "image": "/assets/pokemon/v_19.jpg"
     },
     {
       "id": 20,
@@ -408,7 +408,7 @@
       "answer": "CRAMORANT",
       "clue": "Il Pokémon Inghiottone #845.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_20.jpg"
+      "image": "/assets/pokemon/o_20.jpg"
     },
     {
       "id": 21,
@@ -420,7 +420,7 @@
       "answer": "AK",
       "clue": "Ashton Kutcher (iniziali).",
       "hint": true,
-      "image": "/public/assets/pokemon/v_21.jpg"
+      "image": "/assets/pokemon/v_21.jpg"
     },
     {
       "id": 22,
@@ -443,7 +443,7 @@
       "answer": "SAWK",
       "clue": "Il Pokémon Karate #539.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_23.jpg"
+      "image": "/assets/pokemon/o_23.jpg"
     },
     {
       "id": 24,
@@ -455,7 +455,7 @@
       "answer": "HAKAMOO",
       "clue": "Il Pokémon Squama #783.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_25.jpg"
+      "image": "/assets/pokemon/o_25.jpg"
     },
     {
       "id": 25,
@@ -467,7 +467,7 @@
       "answer": "DEV",
       "clue": "Il cuore... di Gardevoir.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_26.jpg"
+      "image": "/assets/pokemon/o_26.jpg"
     },
     {
       "id": 26,
@@ -512,7 +512,7 @@
       "answer": "SNIVY",
       "clue": "Il Pokémon Serperba #495.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_29.jpg"
+      "image": "/assets/pokemon/v_29.jpg"
     },
     {
       "id": 30,
@@ -535,7 +535,7 @@
       "answer": "RI",
       "clue": "Roberto Insigne (iniziali).",
       "hint": true,
-      "image": "/public/assets/pokemon/v_31.jpg"
+      "image": "/assets/pokemon/v_31.jpg"
     },
     {
       "id": 32,
@@ -547,7 +547,7 @@
       "answer": "KOKO",
       "clue": "Il 'figlio' di Zarude.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_32.jpg"
+      "image": "/assets/pokemon/o_32.jpg"
     },
     {
       "id": 33,
@@ -559,7 +559,7 @@
       "answer": "OAK",
       "clue": "Vive e lavora nel suo suo laboratorio di Biancavilla.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_33.jpg"
+      "image": "/assets/pokemon/v_33.jpg"
     },
     {
       "id": 34,
@@ -571,7 +571,7 @@
       "answer": "KOMALA",
       "clue": "Il Pokémon Dormiveglia #775.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_34.jpg"
+      "image": "/assets/pokemon/v_34.jpg"
     },
     {
       "id": 35,
@@ -583,7 +583,7 @@
       "answer": "PANTANI",
       "clue": "Marco del ciclismo.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_35.jpg"
+      "image": "/assets/pokemon/o_35.jpg"
     },
     {
       "id": 36,
@@ -595,7 +595,7 @@
       "answer": "TAILLOW",
       "clue": "Il Pokémon Rondine #276.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_36.jpg"
+      "image": "/assets/pokemon/v_36.jpg"
     },
     {
       "id": 37,
@@ -651,7 +651,7 @@
       "answer": "SESIA",
       "clue": "Fiume del Vercellese (uno tra i più lunghi del Piemonte con i suoi 140 km), importante affluente di sinistra del Po.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_41.jpg"
+      "image": "/assets/pokemon/v_41.jpg"
     },
     {
       "id": 42,
@@ -674,7 +674,7 @@
       "answer": "LI",
       "clue": "La \"testa\" di Lilligant, IL Pokémon Fiorfronzolo #549.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_43.jpg"
+      "image": "/assets/pokemon/o_43.jpg"
     },
     {
       "id": 44,
@@ -686,7 +686,7 @@
       "answer": "VISONE",
       "clue": "Mustelide da pelliccia.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_44.jpg"
+      "image": "/assets/pokemon/o_44.jpg"
     },
     {
       "id": 45,
@@ -698,7 +698,7 @@
       "answer": "NACLI",
       "clue": "Il Pokémon Salgemma #932.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_45.jpg"
+      "image": "/assets/pokemon/v_45.jpg"
     },
     {
       "id": 46,
@@ -710,7 +710,7 @@
       "answer": "IPOM",
       "clue": "Aipom, il Pokémon Lungacoda... ma senza testa.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_46.jpg"
+      "image": "/assets/pokemon/v_46.jpg"
     },
     {
       "id": 47,
@@ -722,7 +722,7 @@
       "answer": "AERODACTYL",
       "clue": "Il Pokémon Fossile #142.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_47.jpg"
+      "image": "/assets/pokemon/o_47.jpg"
     },
     {
       "id": 48,
@@ -756,7 +756,7 @@
       "answer": "DIK",
       "clue": "Quelli di 'Sognando la California', ma solo a metà.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_50.jpg"
+      "image": "/assets/pokemon/v_50.jpg"
     },
     {
       "id": 51,
@@ -768,7 +768,7 @@
       "answer": "TRAM",
       "clue": "Veicolo a propulsione elettrica per il trasporto di passeggeri, il cui percorso, su rotaia, si svolge totalmente o per la massima parte sulla sede stradale.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_51.jpg"
+      "image": "/assets/pokemon/v_51.jpg"
     },
     {
       "id": 52,
@@ -780,7 +780,7 @@
       "answer": "NAS",
       "clue": "Network Attached Storage... oppure Nucleo Anti Sofisticazioni dei Carabinieri.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_52.jpg"
+      "image": "/assets/pokemon/o_52.jpg"
     },
     {
       "id": 53,
@@ -825,7 +825,7 @@
       "answer": "AMO",
       "clue": "La testa del Pokémon Fungo #591.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_56.jpg"
+      "image": "/assets/pokemon/v_56.jpg"
     },
     {
       "id": 57,
@@ -837,7 +837,7 @@
       "answer": "ARBOK",
       "clue": "Il Pokémon Cobra #24.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_57.jpg"
+      "image": "/assets/pokemon/o_57.jpg"
     },
     {
       "id": 58,
@@ -849,7 +849,7 @@
       "answer": "RH",
       "clue": "La \"testa\" di Rhydon, il Pokémon Trapanmo #112... oppure indica il fattore del gruppo sanguigno.",
       "hint": true,
-      "image": "/public/assets/pokemon/v_58.jpg"
+      "image": "/assets/pokemon/v_58.jpg"
     },
     {
       "id": 59,
@@ -872,7 +872,7 @@
       "answer": "MT",
       "clue": "Non se ne hanno mai abbastanza di... Macchine Tecniche.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_60.jpg"
+      "image": "/assets/pokemon/o_60.jpg"
     },
     {
       "id": 61,
@@ -884,7 +884,7 @@
       "answer": "HOR",
       "clue": "Il preferito di Misty... ma solo metà.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_61.jpg"
+      "image": "/assets/pokemon/o_61.jpg"
     },
     {
       "id": 62,
@@ -896,7 +896,7 @@
       "answer": "SAM",
       "clue": "Un giovane allenatore di Pokémon, trasportato 'casualmente' da Celebi, nel presente di Ash da 40 anni nel passato.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_62.jpg"
+      "image": "/assets/pokemon/o_62.jpg"
     },
     {
       "id": 63,
@@ -908,7 +908,7 @@
       "answer": "WO",
       "clue": "La \"testa\" di Wooper, il Pokémon Acquapesce #194.",
       "hint": true,
-      "image": "/public/assets/pokemon/o_63.jpg"
+      "image": "/assets/pokemon/o_63.jpg"
     }
   ]
 }
