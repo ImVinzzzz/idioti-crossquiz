@@ -9,4 +9,9 @@
     "titolo": "Santini",
     "file": "santini"
   }
+  {
+    "id": "pokemon1",
+    "titolo": "Pokémon",
+    "file": "pokemon"
+  }
 ]
