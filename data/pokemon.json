@@ -2,7 +2,9 @@
   "meta": {
     "title": "Cruciverba pokemon",
     "gridRows": 12,
-    "gridCols": 16
+    "gridCols": 16,
+    "hazard_bonus": "/public/assets/pokemon/bonus.svg",
+    "hazard_malus": "/public/assets/pokemon/malus.svg"
   },
   "blackCells": [
     [

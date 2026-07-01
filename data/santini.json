@@ -1,529 +1,531 @@
 {
-  "meta": {
-    "title": "Santini",
-    "gridRows": 9,
-    "gridCols": 12
-  },
-  "blackCells": [
-    [
-      0,
-      6
+    "meta": {
+        "title": "Santini",
+        "gridRows": 9,
+        "gridCols": 12,
+        "hazard_bonus": "/public/assets/Santini/bonus.svg",
+        "hazard_malus": "/public/assets/Santini/malus.svg"
+    },
+    "blackCells": [
+        [
+            0,
+            6
+        ],
+        [
+            2,
+            5
+        ],
+        [
+            2,
+            7
+        ],
+        [
+            2,
+            11
+        ],
+        [
+            3,
+            1
+        ],
+        [
+            3,
+            10
+        ],
+        [
+            4,
+            3
+        ],
+        [
+            4,
+            7
+        ],
+        [
+            4,
+            9
+        ],
+        [
+            5,
+            3
+        ],
+        [
+            6,
+            1
+        ],
+        [
+            6,
+            3
+        ],
+        [
+            6,
+            7
+        ],
+        [
+            6,
+            8
+        ],
+        [
+            6,
+            11
+        ],
+        [
+            7,
+            6
+        ],
+        [
+            8,
+            0
+        ],
+        [
+            8,
+            5
+        ],
+        [
+            8,
+            10
+        ]
     ],
-    [
-      2,
-      5
-    ],
-    [
-      2,
-      7
-    ],
-    [
-      2,
-      11
-    ],
-    [
-      3,
-      1
-    ],
-    [
-      3,
-      10
-    ],
-    [
-      4,
-      3
-    ],
-    [
-      4,
-      7
-    ],
-    [
-      4,
-      9
-    ],
-    [
-      5,
-      3
-    ],
-    [
-      6,
-      1
-    ],
-    [
-      6,
-      3
-    ],
-    [
-      6,
-      7
-    ],
-    [
-      6,
-      8
-    ],
-    [
-      6,
-      11
-    ],
-    [
-      7,
-      6
-    ],
-    [
-      8,
-      0
-    ],
-    [
-      8,
-      5
-    ],
-    [
-      8,
-      10
+    "words": [
+        {
+            "id": 1,
+            "number": 1,
+            "direction": "across",
+            "row": 0,
+            "col": 0,
+            "length": 6,
+            "answer": "AGNESE",
+            "clue": "La Santa del 21 gennaio... suocera del Lorenzo manzoniano",
+            "hint": true,
+            "image": "/public/assets/Santini/o_1.jpg"
+        },
+        {
+            "id": 2,
+            "number": 7,
+            "direction": "across",
+            "row": 0,
+            "col": 7,
+            "length": 5,
+            "answer": "LUCIA",
+            "clue": "La Santa, Vergine e Martire, celebrata il 13 dicembre... che è anche personaggio manzoniano che trova asilo nella dimora di Don Ferrante e donna Prassede.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_7.jpg"
+        },
+        {
+            "id": 3,
+            "number": 12,
+            "direction": "across",
+            "row": 1,
+            "col": 0,
+            "length": 12,
+            "answer": "SECONDOPOLLO",
+            "clue": "Presbitero e militare italiano, appartenente al corpo degli alpini, medaglia d'argento al valor militare. Venerato come Beato dalla Chiesa cattolica. Commemorato il 26 dicembre.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_12.jpg"
+        },
+        {
+            "id": 4,
+            "number": 14,
+            "direction": "across",
+            "row": 2,
+            "col": 0,
+            "length": 5,
+            "answer": "FIONA",
+            "clue": "Moglie dell'orco Shrek",
+            "hint": true,
+            "image": "/public/assets/Santini/o_14.jpg"
+        },
+        {
+            "id": 5,
+            "number": 15,
+            "direction": "across",
+            "row": 2,
+            "col": 8,
+            "length": 3,
+            "answer": "MIA",
+            "clue": "Né tua, né sua.",
+            "hint": false
+        },
+        {
+            "id": 6,
+            "number": 16,
+            "direction": "across",
+            "row": 3,
+            "col": 2,
+            "length": 8,
+            "answer": "METROBIO",
+            "clue": "Il Santo del 24 dicembre... venerato a Malesco.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_16.jpg"
+        },
+        {
+            "id": 7,
+            "number": 19,
+            "direction": "across",
+            "row": 4,
+            "col": 0,
+            "length": 3,
+            "answer": "DOP",
+            "clue": "Sigla che identifica alcuni prodotti enog-astronomici particolarmente pregiati.",
+            "hint": false
+        },
+        {
+            "id": 8,
+            "number": 21,
+            "direction": "across",
+            "row": 4,
+            "col": 4,
+            "length": 3,
+            "answer": "UEN",
+            "clue": "Unione per l'Europa delle Nazioni.",
+            "hint": false
+        },
+        {
+            "id": 9,
+            "number": 22,
+            "direction": "across",
+            "row": 4,
+            "col": 10,
+            "length": 2,
+            "answer": "OD",
+            "clue": "Nella coda.",
+            "hint": false
+        },
+        {
+            "id": 10,
+            "number": 23,
+            "direction": "across",
+            "row": 5,
+            "col": 0,
+            "length": 3,
+            "answer": "EUR",
+            "clue": "Treantaduesimo quartiere di Roma che ospita il Palazzo della Civiltà Italiana.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_23.jpg"
+        },
+        {
+            "id": 11,
+            "number": 24,
+            "direction": "across",
+            "row": 5,
+            "col": 4,
+            "length": 8,
+            "answer": "RAZZIATA",
+            "clue": "Depredata, saccheggiata, messa a ferro e fuoco.",
+            "hint": false
+        },
+        {
+            "id": 12,
+            "number": 26,
+            "direction": "across",
+            "row": 6,
+            "col": 4,
+            "length": 3,
+            "answer": "ATO",
+            "clue": "Nato senza testa.",
+            "hint": false
+        },
+        {
+            "id": 13,
+            "number": 27,
+            "direction": "across",
+            "row": 6,
+            "col": 9,
+            "length": 2,
+            "answer": "NT",
+            "clue": "Nuoto senza vocali.",
+            "hint": false
+        },
+        {
+            "id": 14,
+            "number": 28,
+            "direction": "across",
+            "row": 7,
+            "col": 0,
+            "length": 6,
+            "answer": "INSITO",
+            "clue": "Intimamente congiunto, radicato profondamente, innato.",
+            "hint": false
+        },
+        {
+            "id": 15,
+            "number": 31,
+            "direction": "across",
+            "row": 7,
+            "col": 7,
+            "length": 5,
+            "answer": "CANOA",
+            "clue": "Piccola imbarcazione, di forma stretta e allungata, con le estremità affusolate, a fianchi ricurvi, costruita in materiale leggero, che viene manovrata con la pagaia da un solo vogatore o al massimo da due.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_31.jpg"
+        },
+        {
+            "id": 16,
+            "number": 34,
+            "direction": "across",
+            "row": 8,
+            "col": 1,
+            "length": 4,
+            "answer": "POLO",
+            "clue": "I pinguini vivono in quello Sud.",
+            "hint": false
+        },
+        {
+            "id": 17,
+            "number": 35,
+            "direction": "across",
+            "row": 8,
+            "col": 6,
+            "length": 4,
+            "answer": "SABA",
+            "clue": "Il Santo Archimandrita di Cesarea, commemorato il 5 dicembre... e poeta triestino vissuto tra il 1883 e il 1957.",
+            "hint": true,
+            "image": "/public/assets/Santini/o_35.jpg"
+        },
+        {
+            "id": 18,
+            "number": 1,
+            "direction": "down",
+            "row": 0,
+            "col": 0,
+            "length": 8,
+            "answer": "ASFODELI",
+            "clue": "Piante erbacee della famiglia delle Liliacee... per Omero erano i fiori degli inferi.",
+            "hint": true,
+            "image": "/public/assets/Santini/v_1.jpg"
+        },
+        {
+            "id": 19,
+            "number": 2,
+            "direction": "down",
+            "row": 0,
+            "col": 1,
+            "length": 3,
+            "answer": "GEI",
+            "clue": "Genio... senza no",
+            "hint": false
+        },
+        {
+            "id": 20,
+            "number": 3,
+            "direction": "down",
+            "row": 0,
+            "col": 2,
+            "length": 9,
+            "answer": "NCOMPRESO",
+            "clue": "Incompreso... senza principio",
+            "hint": false
+        },
+        {
+            "id": 21,
+            "number": 4,
+            "direction": "down",
+            "row": 0,
+            "col": 3,
+            "length": 4,
+            "answer": "EONE",
+            "clue": "Divinità greca, personificazione del Tempo, corrispondente al Saturno latino... oppure a un miliardo di anni.",
+            "hint": true,
+            "image": "/public/assets/Santini/v_4.jpg"
+        },
+        {
+            "id": 22,
+            "number": 5,
+            "direction": "down",
+            "row": 0,
+            "col": 4,
+            "length": 9,
+            "answer": "SNATURATO",
+            "clue": "Che ha perduto o alterato profondamente la propria natura; privato dei propri caratteri naturali, intrinseci e qualificanti.",
+            "hint": false
+        },
+        {
+            "id": 23,
+            "number": 6,
+            "direction": "down",
+            "row": 0,
+            "col": 5,
+            "length": 2,
+            "answer": "ED",
+            "clue": "Cede... in mezzo.",
+            "hint": false
+        },
+        {
+            "id": 24,
+            "number": 7,
+            "direction": "down",
+            "row": 0,
+            "col": 7,
+            "length": 2,
+            "answer": "LP",
+            "clue": "Long play.",
+            "hint": false
+        },
+        {
+            "id": 25,
+            "number": 8,
+            "direction": "down",
+            "row": 0,
+            "col": 8,
+            "length": 6,
+            "answer": "UOMINI",
+            "clue": "Secondo la Treccani sono: esseri coscienti e responsabili dei propri atti, capaci di distaccarsi dal mondo organico oggettivandolo e servendosene per i propri fini.",
+            "hint": true,
+            "image": "/public/assets/Santini/v_8.jpg"
+        },
+        {
+            "id": 26,
+            "number": 9,
+            "direction": "down",
+            "row": 0,
+            "col": 9,
+            "length": 4,
+            "answer": "CLIO",
+            "clue": "Modello di auto francese... e moglie dell'ex presidente Napolitano.",
+            "hint": false
+        },
+        {
+            "id": 27,
+            "number": 10,
+            "direction": "down",
+            "row": 0,
+            "col": 10,
+            "length": 3,
+            "answer": "ILA",
+            "clue": "Raganella verde.",
+            "hint": true,
+            "image": "/public/assets/Santini/v_10.jpg"
+        },
+        {
+            "id": 28,
+            "number": 11,
+            "direction": "down",
+            "row": 0,
+            "col": 11,
+            "length": 2,
+            "answer": "AO",
+            "clue": "In bagno e sul palo.",
+            "hint": false
+        },
+        {
+            "id": 29,
+            "number": 13,
+            "direction": "down",
+            "row": 1,
+            "col": 6,
+            "length": 6,
+            "answer": "ORONZO",
+            "clue": "Quello di Lecce, fatto Santo, è celebrato il 26 agosto... il Mago, invece, è Raul Cremona sotto mentite spoglie... e quello della foto è l'allenatore della Longobarda.",
+            "hint": true,
+            "image": "/public/assets/Santini/v_13.jpg"
+        },
+        {
+            "id": 30,
+            "number": 17,
+            "direction": "down",
+            "row": 3,
+            "col": 5,
+            "length": 5,
+            "answer": "REATO",
+            "clue": "C'è quello procedibile d'ufficio e quello perseguibile sulla base di una querela, denuncia, richiesta o istanza",
+            "hint": false
+        },
+        {
+            "id": 31,
+            "number": 18,
+            "direction": "down",
+            "row": 3,
+            "col": 11,
+            "length": 3,
+            "answer": "ADA",
+            "clue": "Altro nome della Santa Adreilde di Le Mans ricordata il 4 dicembre.",
+            "hint": false
+        },
+        {
+            "id": 32,
+            "number": 20,
+            "direction": "down",
+            "row": 4,
+            "col": 1,
+            "length": 2,
+            "answer": "OU",
+            "clue": "Incipit di... ouverture.",
+            "hint": false
+        },
+        {
+            "id": 33,
+            "number": 21,
+            "direction": "down",
+            "row": 4,
+            "col": 10,
+            "length": 4,
+            "answer": "OTTO",
+            "clue": "Col 7 in un film di Ficarra e Picone del 2007.",
+            "hint": false
+        },
+        {
+            "id": 34,
+            "number": 25,
+            "direction": "down",
+            "row": 5,
+            "col": 9,
+            "length": 4,
+            "answer": "ANNA",
+            "clue": "La nonna di Gesù, mamma di Maria e sposa di Gioacchino.",
+            "hint": false
+        },
+        {
+            "id": 35,
+            "number": 29,
+            "direction": "down",
+            "row": 7,
+            "col": 1,
+            "length": 2,
+            "answer": "NP",
+            "clue": "Non pervenuto.",
+            "hint": false
+        },
+        {
+            "id": 36,
+            "number": 30,
+            "direction": "down",
+            "row": 7,
+            "col": 3,
+            "length": 2,
+            "answer": "IL",
+            "clue": "Articolo per manichino.",
+            "hint": false
+        },
+        {
+            "id": 37,
+            "number": 31,
+            "direction": "down",
+            "row": 7,
+            "col": 7,
+            "length": 2,
+            "answer": "CA",
+            "clue": "Cane senza coda.",
+            "hint": false
+        },
+        {
+            "id": 38,
+            "number": 32,
+            "direction": "down",
+            "row": 7,
+            "col": 8,
+            "length": 2,
+            "answer": "AB",
+            "clue": "In cima all'abside.",
+            "hint": false
+        },
+        {
+            "id": 39,
+            "number": 33,
+            "direction": "down",
+            "row": 7,
+            "col": 11,
+            "length": 2,
+            "answer": "AA",
+            "clue": "I confini dell'Alaska.",
+            "hint": false
+        }
     ]
-  ],
-  "words": [
-    {
-      "id": 1,
-      "number": 1,
-      "direction": "across",
-      "row": 0,
-      "col": 0,
-      "length": 6,
-      "answer": "AGNESE",
-      "clue": "La Santa del 21 gennaio... suocera del Lorenzo manzoniano",
-      "hint": true,
-      "image": "/public/assets/Santini/o_1.jpg"
-    },
-    {
-      "id": 2,
-      "number": 7,
-      "direction": "across",
-      "row": 0,
-      "col": 7,
-      "length": 5,
-      "answer": "LUCIA",
-      "clue": "La Santa, Vergine e Martire, celebrata il 13 dicembre... che è anche personaggio manzoniano che trova asilo nella dimora di Don Ferrante e donna Prassede.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_7.jpg"
-    },
-    {
-      "id": 3,
-      "number": 12,
-      "direction": "across",
-      "row": 1,
-      "col": 0,
-      "length": 12,
-      "answer": "SECONDOPOLLO",
-      "clue": "Presbitero e militare italiano, appartenente al corpo degli alpini, medaglia d'argento al valor militare. Venerato come Beato dalla Chiesa cattolica. Commemorato il 26 dicembre.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_12.jpg"
-    },
-    {
-      "id": 4,
-      "number": 14,
-      "direction": "across",
-      "row": 2,
-      "col": 0,
-      "length": 5,
-      "answer": "FIONA",
-      "clue": "Moglie dell'orco Shrek",
-      "hint": true,
-      "image": "/public/assets/Santini/o_14.jpg"
-    },
-    {
-      "id": 5,
-      "number": 15,
-      "direction": "across",
-      "row": 2,
-      "col": 8,
-      "length": 3,
-      "answer": "MIA",
-      "clue": "Né tua, né sua.",
-      "hint": false
-    },
-    {
-      "id": 6,
-      "number": 16,
-      "direction": "across",
-      "row": 3,
-      "col": 2,
-      "length": 8,
-      "answer": "METROBIO",
-      "clue": "Il Santo del 24 dicembre... venerato a Malesco.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_16.jpg"
-    },
-    {
-      "id": 7,
-      "number": 19,
-      "direction": "across",
-      "row": 4,
-      "col": 0,
-      "length": 3,
-      "answer": "DOP",
-      "clue": "Sigla che identifica alcuni prodotti enog-astronomici particolarmente pregiati.",
-      "hint": false
-    },
-    {
-      "id": 8,
-      "number": 21,
-      "direction": "across",
-      "row": 4,
-      "col": 4,
-      "length": 3,
-      "answer": "UEN",
-      "clue": "Unione per l'Europa delle Nazioni.",
-      "hint": false
-    },
-    {
-      "id": 9,
-      "number": 22,
-      "direction": "across",
-      "row": 4,
-      "col": 10,
-      "length": 2,
-      "answer": "OD",
-      "clue": "Nella coda.",
-      "hint": false
-    },
-    {
-      "id": 10,
-      "number": 23,
-      "direction": "across",
-      "row": 5,
-      "col": 0,
-      "length": 3,
-      "answer": "EUR",
-      "clue": "Treantaduesimo quartiere di Roma che ospita il Palazzo della Civiltà Italiana.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_23.jpg"
-    },
-    {
-      "id": 11,
-      "number": 24,
-      "direction": "across",
-      "row": 5,
-      "col": 4,
-      "length": 8,
-      "answer": "RAZZIATA",
-      "clue": "Depredata, saccheggiata, messa a ferro e fuoco.",
-      "hint": false
-    },
-    {
-      "id": 12,
-      "number": 26,
-      "direction": "across",
-      "row": 6,
-      "col": 4,
-      "length": 3,
-      "answer": "ATO",
-      "clue": "Nato senza testa.",
-      "hint": false
-    },
-    {
-      "id": 13,
-      "number": 27,
-      "direction": "across",
-      "row": 6,
-      "col": 9,
-      "length": 2,
-      "answer": "NT",
-      "clue": "Nuoto senza vocali.",
-      "hint": false
-    },
-    {
-      "id": 14,
-      "number": 28,
-      "direction": "across",
-      "row": 7,
-      "col": 0,
-      "length": 6,
-      "answer": "INSITO",
-      "clue": "Intimamente congiunto, radicato profondamente, innato.",
-      "hint": false
-    },
-    {
-      "id": 15,
-      "number": 31,
-      "direction": "across",
-      "row": 7,
-      "col": 7,
-      "length": 5,
-      "answer": "CANOA",
-      "clue": "Piccola imbarcazione, di forma stretta e allungata, con le estremità affusolate, a fianchi ricurvi, costruita in materiale leggero, che viene manovrata con la pagaia da un solo vogatore o al massimo da due.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_31.jpg"
-    },
-    {
-      "id": 16,
-      "number": 34,
-      "direction": "across",
-      "row": 8,
-      "col": 1,
-      "length": 4,
-      "answer": "POLO",
-      "clue": "I pinguini vivono in quello Sud",
-      "hint": false
-    },
-    {
-      "id": 17,
-      "number": 35,
-      "direction": "across",
-      "row": 8,
-      "col": 6,
-      "length": 4,
-      "answer": "SABA",
-      "clue": "Il Santo Archimandrita di Cesarea, commemorato il 5 dicembre... e poeta triestino vissuto tra il 1883 e il 1957.",
-      "hint": true,
-      "image": "/public/assets/Santini/o_35.jpg"
-    },
-    {
-      "id": 18,
-      "number": 1,
-      "direction": "down",
-      "row": 0,
-      "col": 0,
-      "length": 8,
-      "answer": "ASFODELI",
-      "clue": "Piante erbacee della famiglia delle Liliacee... per Omero erano i fiori degli inferi.",
-      "hint": true,
-      "image": "/public/assets/Santini/v_1.jpg"
-    },
-    {
-      "id": 19,
-      "number": 2,
-      "direction": "down",
-      "row": 0,
-      "col": 1,
-      "length": 3,
-      "answer": "GEI",
-      "clue": "Genio... senza no",
-      "hint": false
-    },
-    {
-      "id": 20,
-      "number": 3,
-      "direction": "down",
-      "row": 0,
-      "col": 2,
-      "length": 9,
-      "answer": "NCOMPRESO",
-      "clue": "Incompreso... senza principio",
-      "hint": false
-    },
-    {
-      "id": 21,
-      "number": 4,
-      "direction": "down",
-      "row": 0,
-      "col": 3,
-      "length": 4,
-      "answer": "EONE",
-      "clue": "Divinità greca, personificazione del Tempo, corrispondente al Saturno latino... oppure a un miliardo di anni.",
-      "hint": true,
-      "image": "/public/assets/Santini/v_4.jpg"
-    },
-    {
-      "id": 22,
-      "number": 5,
-      "direction": "down",
-      "row": 0,
-      "col": 4,
-      "length": 9,
-      "answer": "SNATURATO",
-      "clue": "Che ha perduto o alterato profondamente la propria natura; privato dei propri caratteri naturali, intrinseci e qualificanti.",
-      "hint": false
-    },
-    {
-      "id": 23,
-      "number": 6,
-      "direction": "down",
-      "row": 0,
-      "col": 5,
-      "length": 2,
-      "answer": "ED",
-      "clue": "Cede... in mezzo.",
-      "hint": false
-    },
-    {
-      "id": 24,
-      "number": 7,
-      "direction": "down",
-      "row": 0,
-      "col": 7,
-      "length": 2,
-      "answer": "LP",
-      "clue": "Long play.",
-      "hint": false
-    },
-    {
-      "id": 25,
-      "number": 8,
-      "direction": "down",
-      "row": 0,
-      "col": 8,
-      "length": 6,
-      "answer": "UOMINI",
-      "clue": "Secondo la Treccani sono: esseri coscienti e responsabili dei propri atti, capaci di distaccarsi dal mondo organico oggettivandolo e servendosene per i propri fini.",
-      "hint": true,
-      "image": "/public/assets/Santini/v_8.jpg"
-    },
-    {
-      "id": 26,
-      "number": 9,
-      "direction": "down",
-      "row": 0,
-      "col": 9,
-      "length": 4,
-      "answer": "CLIO",
-      "clue": "Modello di auto francese... e moglie dell'ex presidente Napolitano.",
-      "hint": false
-    },
-    {
-      "id": 27,
-      "number": 10,
-      "direction": "down",
-      "row": 0,
-      "col": 10,
-      "length": 3,
-      "answer": "ILA",
-      "clue": "Raganella verde.",
-      "hint": true,
-      "image": "/public/assets/Santini/v_10.jpg"
-    },
-    {
-      "id": 28,
-      "number": 11,
-      "direction": "down",
-      "row": 0,
-      "col": 11,
-      "length": 2,
-      "answer": "AO",
-      "clue": "In bagno e sul palo.",
-      "hint": false
-    },
-    {
-      "id": 29,
-      "number": 13,
-      "direction": "down",
-      "row": 1,
-      "col": 6,
-      "length": 6,
-      "answer": "ORONZO",
-      "clue": "Quello di Lecce, fatto Santo, è celebrato il 26 agosto... il Mago, invece, è Raul Cremona sotto mentite spoglie... e quello della foto è l'allenatore della Longobarda.",
-      "hint": true,
-      "image": "/public/assets/Santini/v_13.jpg"
-    },
-    {
-      "id": 30,
-      "number": 17,
-      "direction": "down",
-      "row": 3,
-      "col": 5,
-      "length": 5,
-      "answer": "REATO",
-      "clue": "C'è quello procedibile d'ufficio e quello perseguibile sulla base di una querela, denuncia, richiesta o istanza",
-      "hint": false
-    },
-    {
-      "id": 31,
-      "number": 18,
-      "direction": "down",
-      "row": 3,
-      "col": 11,
-      "length": 3,
-      "answer": "ADA",
-      "clue": "Altro nome della Santa Adreilde di Le Mans ricordata il 4 dicembre.",
-      "hint": false
-    },
-    {
-      "id": 32,
-      "number": 20,
-      "direction": "down",
-      "row": 4,
-      "col": 1,
-      "length": 2,
-      "answer": "OU",
-      "clue": "Incipit di... ouverture.",
-      "hint": false
-    },
-    {
-      "id": 33,
-      "number": 21,
-      "direction": "down",
-      "row": 4,
-      "col": 10,
-      "length": 4,
-      "answer": "OTTO",
-      "clue": "Col 7 in un film di Ficarra e Picone del 2007.",
-      "hint": false
-    },
-    {
-      "id": 34,
-      "number": 25,
-      "direction": "down",
-      "row": 5,
-      "col": 9,
-      "length": 4,
-      "answer": "ANNA",
-      "clue": "La nonna di Gesù, mamma di Maria e sposa di Gioacchino.",
-      "hint": false
-    },
-    {
-      "id": 35,
-      "number": 29,
-      "direction": "down",
-      "row": 7,
-      "col": 1,
-      "length": 2,
-      "answer": "NP",
-      "clue": "Non pervenuto.",
-      "hint": false
-    },
-    {
-      "id": 36,
-      "number": 30,
-      "direction": "down",
-      "row": 7,
-      "col": 3,
-      "length": 2,
-      "answer": "IL",
-      "clue": "Articolo per manichino.",
-      "hint": false
-    },
-    {
-      "id": 37,
-      "number": 31,
-      "direction": "down",
-      "row": 7,
-      "col": 7,
-      "length": 2,
-      "answer": "CA",
-      "clue": "Cane senza coda.",
-      "hint": false
-    },
-    {
-      "id": 38,
-      "number": 32,
-      "direction": "down",
-      "row": 7,
-      "col": 8,
-      "length": 2,
-      "answer": "AB",
-      "clue": "In cima all'abside.",
-      "hint": false
-    },
-    {
-      "id": 39,
-      "number": 33,
-      "direction": "down",
-      "row": 7,
-      "col": 11,
-      "length": 2,
-      "answer": "AA",
-      "clue": "I confini dell'Alaska.",
-      "hint": false
-    }
-  ]
 }

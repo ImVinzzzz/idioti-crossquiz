@@ -2,7 +2,9 @@
   "meta": {
     "title": "Santi & Idioti Cross Quiz",
     "gridRows": 14,
-    "gridCols": 13
+    "gridCols": 13,
+    "hazard_bonus": "/public/assets/schema1/bonus.svg",
+    "hazard_malus": "/public/assets/schema1/malus.svg"
   },
   "blackCells": [
     [
