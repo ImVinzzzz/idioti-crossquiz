@@ -418,7 +418,7 @@
       "col": 2,
       "length": 2,
       "answer": "AK",
-      "clue": "Ashton Kutcher (iniziali).",
+      "clue": "Ash Ketchum (iniziali).",
       "hint": true,
       "image": "/assets/pokemon/v_21.jpg"
     },
@@ -522,8 +522,9 @@
       "col": 12,
       "length": 4,
       "answer": "PARA",
-      "clue": "Mezzo paralume.",
-      "hint": false
+      "clue": "Mezzo... Pokémon Fungo #047.",
+      "hint": true,
+      "image": "/assets/pokemon/o_30.jpg"
     },
     {
       "id": 31,
@@ -533,7 +534,7 @@
       "col": 14,
       "length": 2,
       "answer": "RI",
-      "clue": "Roberto Insigne (iniziali).",
+      "clue": "La testa del Pokémon Percussione #812.",
       "hint": true,
       "image": "/assets/pokemon/v_31.jpg"
     },
@@ -628,7 +629,8 @@
       "length": 4,
       "answer": "SLAT",
       "clue": "In aeronautica sta ad indicare un ipersostentatore del bordo centrale di un’ala, detto anche alula, o aletta, ipersostentatrice.",
-      "hint": false
+      "hint": true,
+      "image": "/assets/pokemon/v_39.jpg"
     },
     {
       "id": 40,
@@ -672,7 +674,7 @@
       "col": 7,
       "length": 2,
       "answer": "LI",
-      "clue": "La \"testa\" di Lilligant, IL Pokémon Fiorfronzolo #549.",
+      "clue": "La testa di Lilligant, il Pokémon Fiorfronzolo #549.",
       "hint": true,
       "image": "/assets/pokemon/o_43.jpg"
     },
@@ -790,8 +792,9 @@
       "col": 0,
       "length": 3,
       "answer": "PAL",
-      "clue": "La regione di 9ª generazione... ma solo all'inizio.",
-      "hint": false
+      "clue": "La testa del Pokémon Spazio #484.",
+      "hint": true,
+      "image": "/assets/pokemon/o_53.jpg"
     },
     {
       "id": 54,
@@ -847,7 +850,7 @@
       "col": 3,
       "length": 2,
       "answer": "RH",
-      "clue": "La \"testa\" di Rhydon, il Pokémon Trapanmo #112... oppure indica il fattore del gruppo sanguigno.",
+      "clue": "La testa di Rhydon, il Pokémon Trapanmo #112... oppure indica il fattore del gruppo sanguigno.",
       "hint": true,
       "image": "/assets/pokemon/v_58.jpg"
     },
@@ -906,7 +909,7 @@
       "col": 11,
       "length": 2,
       "answer": "WO",
-      "clue": "La \"testa\" di Wooper, il Pokémon Acquapesce #194.",
+      "clue": "La testa di Wooper, il Pokémon Acquapesce #194.",
       "hint": true,
       "image": "/assets/pokemon/o_63.jpg"
     }
