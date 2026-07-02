@@ -236,7 +236,20 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
     }, 1000);
   }, []);
 
-  useEffect(() => () => clearTimer(), []);
+  useEffect(() => {
+    if (!gameData) return;
+    const allFilled = deck.words.length > 0 && deck.words.every(function (w) { return !w.inDeck; });
+    if (allFilled) {
+      clearTimer();
+      setPhase("showing_result");
+      const timer = setTimeout(function () {
+        onEndGame(players);
+      }, 3000);
+      return function () {
+        clearTimeout(timer);
+      };
+    }
+  }, [deck.words, gameData, onEndGame, players]);
 
   // Highlight cells for a word
   const highlightWord = useCallback((word) => {
@@ -256,7 +269,7 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
     const availableWords = deck.words.filter(w => w.inDeck);
     const availableHazards = [...deck.hazards];
 
-    if (availableWords.length === 0 && availableHazards.length === 0) {
+    if (availableWords.length === 0) {
       onEndGame(players);
       return;
     }
@@ -424,12 +437,6 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
     setPhase("idle");
     setCurrentCard(null);
     advanceTurn();
-
-    // Check endgame
-    setTimeout(() => {
-      const allFilled = gameData.words.every(w => !deck.words.find(dw => dw.id === w.id)?.inDeck);
-      if (allFilled) onEndGame(players);
-    }, 500);
   };
 
   const processWrongAnswer = () => {
