@@ -1,5 +1,15 @@
 [
   {
+    "id": "pokemon1",
+    "titolo": "Pokémon",
+    "file": "pokemon"
+  },
+  {
+    "id": "nerd1",
+    "titolo": "Nerd & co.",
+    "file": "nerd"
+  },
+  {
     "id": "santi",
     "titolo": "Santi",
     "file": "schema1"
@@ -8,10 +18,5 @@
     "id": "santini",
     "titolo": "Santini",
     "file": "santini"
-  },
-  {
-    "id": "pokemon1",
-    "titolo": "Pokémon",
-    "file": "pokemon"
   }
 ]
