@@ -1090,4 +1090,50 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
+/* ── HINT MODAL OVERLAY ── */
+.hint-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.hint-modal-content {
+  background: radial-gradient(circle at center, #2e1e42 0%, #17112e 100%);
+  border: 5px solid #f5c518;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 90%;
+  box-shadow: 0 0 30px rgba(245, 197, 24, 0.4), 0 20px 50px rgba(0, 0, 0, 0.6);
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hint-modal-img {
+  width: 500px;
+  height: 500px;
+  max-width: 80vw;
+  max-height: 50vh;
+  object-fit: contain;
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.15));
+}
+
+.hint-modal-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e8e8f0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 

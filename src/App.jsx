@@ -214,6 +214,7 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
   const [highlightedCells, setHighlightedCells] = useState([]);
   const [failChain, setFailChain] = useState(null); // { wordId, attemptedPlayers: [] }
   const [toast, setToast] = useState(null);
+  const [showHintOverlay, setShowHintOverlay] = useState(false);
   const timerRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -312,6 +313,12 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
     setActiveJoker(null);
     setInputVal("");
     highlightWord(word);
+    if (word.hint) {
+      setShowHintOverlay(true);
+      setTimeout(function () {
+        setShowHintOverlay(false);
+      }, 4000);
+    }
     const hasJokers = currentPlayer.jokers.x2 > 0 || currentPlayer.jokers.x3 > 0 || currentPlayer.jokers.x4 > 0;
     if (hasJokers) {
       setPhase("joker_timer");
@@ -654,6 +661,28 @@ function GameBoard({ players: initialPlayers, onEndGame, gameData }) {
               {currentCard.type === "bonus"
                 ? "Bonus! +" + HAZARD_BONUS_PTS + " pt a " + players[currentPlayerIdx].name
                 : "Malus! +" + HAZARD_MALUS_PTS + " pt a tutti gli avversari"}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showHintOverlay && currentCard && !currentCard.isHazard && currentCard.hint && (
+        <div className="hint-modal-overlay">
+          <div className="hint-modal-content">
+            <img
+              src={cleanAssetPath(currentCard.image)}
+              alt="Indizio"
+              className="hint-modal-img"
+              onError={function (e) {
+                e.target.style.display = "none";
+                e.target.nextSibling.style.display = "flex";
+              }}
+            />
+            <div className="hint-fallback" style={{ display: "none" }}>
+              {"Indizio: " + currentCard.image}
+            </div>
+            <div className="hint-modal-text">
+              {"Indizio per la carta #" + currentCard.number}
             </div>
           </div>
         </div>
