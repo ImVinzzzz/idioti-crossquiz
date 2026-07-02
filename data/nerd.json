@@ -406,8 +406,7 @@
       "length": 6,
       "answer": "ORRIDO",
       "clue": "Brutto, selvaggio, squallido, pauroso.",
-      "hint": true,
-      "image": "/assets/nerd/v_4.jpg"
+      "hint": false
     },
     {
       "id": 28,
@@ -476,8 +475,7 @@
       "length": 6,
       "answer": "MASTER",
       "clue": "Dirige il gioco nelle sessioni di giochi di ruolo.",
-      "hint": true,
-      "image": "/assets/nerd/v_10.jpg"
+      "hint": false
     },
     {
       "id": 34,
@@ -629,7 +627,7 @@
       "col": 8,
       "length": 2,
       "answer": "DO",
-      "clue": "Uno tra i più grandi 'buffoni' della televisione italiana (iniziali).",
+      "clue": "Uno tra i più grandi 'buffoni' della televisione italiana (iniziali)... e la prima nota.",
       "hint": true,
       "image": "/assets/nerd/v_34.jpg"
     }
