@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Cruciverba generico2",
+    "gridRows": 8,
+    "gridCols": 9,
+    "hazard_bonus": "/assets/generico2/bonus.svg",
+    "hazard_malus": "/assets/generico2/malus.svg"
+  },
+  "blackCells": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "words": [
+    {
+      "id": 1,
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "answer": "STARBUCKS",
+      "clue": "Catena internazionale di caffetteria all'americana.",
+      "hint": true,
+      "image": "/assets/generico2/o_1.jpg"
+    },
+    {
+      "id": 2,
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 3,
+      "length": 6,
+      "answer": "GRUNGE",
+      "clue": "Il genere musicale dei Nirvana.",
+      "hint": false
+    },
+    {
+      "id": 3,
+      "number": 8,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "CARIA",
+      "clue": "Mausolo ne era sovrano.",
+      "hint": false
+    },
+    {
+      "id": 4,
+      "number": 9,
+      "direction": "across",
+      "row": 4,
+      "col": 3,
+      "length": 6,
+      "answer": "SPRECO",
+      "clue": "Il buttare cibo ancora buono.",
+      "hint": false
+    },
+    {
+      "id": 5,
+      "number": 12,
+      "direction": "across",
+      "row": 5,
+      "col": 0,
+      "length": 6,
+      "answer": "DUETTO",
+      "clue": "Brano cantato in coppia.",
+      "hint": false
+    },
+    {
+      "id": 6,
+      "number": 13,
+      "direction": "across",
+      "row": 6,
+      "col": 3,
+      "length": 6,
+      "answer": "RUBENS",
+      "clue": "Pittore fiammingo del barocco.",
+      "hint": true,
+      "image": "/assets/generico2/o_13.jpg"
+    },
+    {
+      "id": 7,
+      "number": 14,
+      "direction": "across",
+      "row": 7,
+      "col": 0,
+      "length": 6,
+      "answer": "TOLOSA",
+      "clue": "Città francese sulla Garonna.",
+      "hint": true,
+      "image": "/assets/generico2/o_14.jpg"
+    },
+    {
+      "id": 8,
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 8,
+      "answer": "TARABUSO",
+      "clue": "Un airone il cui verso assomiglia a un muggito,",
+      "hint": true,
+      "image": "/assets/generico2/v_2.jpg"
+    },
+    {
+      "id": 9,
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 8,
+      "answer": "REGISTRO",
+      "clue": "Estensione della voce umana... oppure libro, quaderno, fascicolo o volume su cui si annotano ordinatamente atti e fatti, elementi e dati, di carattere contabile o commerciale.",
+      "hint": true,
+      "image": "/assets/generico2/v_3.jpg"
+    },
+    {
+      "id": 10,
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "answer": "CONTE",
+      "clue": "Il titolo del leggendario Dracula.",
+      "hint": true,
+      "image": "/assets/generico2/v_4.jpg"
+    },
+    {
+      "id": 11,
+      "number": 5,
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 5,
+      "answer": "STELO",
+      "clue": "Il supporto del fiore.",
+      "hint": true,
+      "image": "/assets/generico2/v_5.jpg"
+    },
+    {
+      "id": 12,
+      "number": 7,
+      "direction": "down",
+      "row": 2,
+      "col": 4,
+      "length": 6,
+      "answer": "RAPTUS",
+      "clue": "Impulso di follia violenta o omicida.",
+      "hint": false
+    },
+    {
+      "id": 13,
+      "number": 10,
+      "direction": "down",
+      "row": 4,
+      "col": 5,
+      "length": 4,
+      "answer": "ROBA",
+      "clue": "vestito, indumento... oggetti generici.",
+      "hint": false
+    },
+    {
+      "id": 14,
+      "number": 11,
+      "direction": "down",
+      "row": 4,
+      "col": 7,
+      "length": 4,
+      "answer": "CENA",
+      "clue": "Il pasto della sera.",
+      "hint": true,
+      "image": "/assets/generico2/v_11.jpg"
+    }
+  ]
+}

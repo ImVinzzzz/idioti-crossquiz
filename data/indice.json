@@ -15,6 +15,11 @@
     "file": "generico1"
   },
   {
+    "id": "generico2",
+    "titolo": "Generico 2",
+    "file": "generico2"
+  },
+  {
     "id": "santi",
     "titolo": "Santi",
     "file": "schema1"
