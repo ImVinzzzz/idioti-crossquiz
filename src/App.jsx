@@ -7,8 +7,8 @@ const JOKER_INVENTORY = { x2: 2, x3: 2, x4: 1 };
 const JOKER_VALUES = { x2: 2, x3: 3, x4: 4 };
 const TIMER_JOKER = 20;
 const TIMER_ANSWER = 90;
-const HAZARD_BONUS_PTS = 50;
-const HAZARD_MALUS_PTS = 50;
+const HAZARD_BONUS_PTS = 25;
+const HAZARD_MALUS_PTS = 25;
 const WRONG_ANSWER_PTS = 5;
 const COLORS = ["#1D6FD3","#D85A30","#1D9E75","#884AB7","#BA7517","#A32D2D"];
 
