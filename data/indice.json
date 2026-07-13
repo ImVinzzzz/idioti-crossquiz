@@ -10,6 +10,11 @@
     "file": "nerd"
   },
   {
+    "id": "generico1",
+    "titolo": "Generico 1",
+    "file": "generico1"
+  },
+  {
     "id": "santi",
     "titolo": "Santi",
     "file": "schema1"
