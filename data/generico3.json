@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Cruciverba generico3",
+    "gridRows": 8,
+    "gridCols": 9,
+    "hazard_bonus": "/assets/generico3/bonus.svg",
+    "hazard_malus": "/assets/generico3/malus.svg"
+  },
+  "blackCells": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "words": [
+    {
+      "id": 1,
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "answer": "TRACCIATO",
+      "clue": "Circuito. percorso... anche diagnostico.",
+      "hint": true,
+      "image": "/assets/generico3/o_1.jpg"
+    },
+    {
+      "id": 2,
+      "number": 6,
+      "direction": "across",
+      "row": 2,
+      "col": 3,
+      "length": 6,
+      "answer": "USSURI",
+      "clue": "Fiume dell'Asia orientale.",
+      "hint": true,
+      "image": "/assets/generico3/o_6.jpg"
+    },
+    {
+      "id": 3,
+      "number": 8,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "length": 5,
+      "answer": "MENSA",
+      "clue": "Tra i suoi membri accoglie il 2% della popolazione mondiale con il più alto Quoziente Intellettivo... oppure: refettorio aziendale o scolastico.",
+      "hint": true,
+      "image": "/assets/generico3/o_8.jpg"
+    },
+    {
+      "id": 4,
+      "number": 9,
+      "direction": "across",
+      "row": 4,
+      "col": 3,
+      "length": 6,
+      "answer": "TIMORE",
+      "clue": "Apprensione, spesso infondata.",
+      "hint": false
+    },
+    {
+      "id": 5,
+      "number": 10,
+      "direction": "across",
+      "row": 5,
+      "col": 0,
+      "length": 6,
+      "answer": "ZURIGO",
+      "clue": "Piazza finanziaria elvetica.",
+      "hint": true,
+      "image": "/assets/generico3/o_10.jpg"
+    },
+    {
+      "id": 6,
+      "number": 11,
+      "direction": "across",
+      "row": 6,
+      "col": 3,
+      "length": 6,
+      "answer": "CORANO",
+      "clue": "Libro sacro per i musulmani.",
+      "hint": true,
+      "image": "/assets/generico3/o_11.jpg"
+    },
+    {
+      "id": 7,
+      "number": 12,
+      "direction": "across",
+      "row": 7,
+      "col": 0,
+      "length": 6,
+      "answer": "VOLANO",
+      "clue": "Si usa nel badminton.",
+      "hint": true,
+      "image": "/assets/generico3/o_12.jpg"
+    },
+    {
+      "id": 8,
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 8,
+      "answer": "RIPETUTO",
+      "clue": "Detto e ridetto più volte.",
+      "hint": false
+    },
+    {
+      "id": 9,
+      "number": 3,
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "length": 8,
+      "answer": "CAUSTICA",
+      "clue": "Corrosiva, come la soda.",
+      "hint": false
+    },
+    {
+      "id": 10,
+      "number": 4,
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "answer": "AIUTO",
+      "clue": "Soccorso, ausilio.",
+      "hint": false
+    },
+    {
+      "id": 11,
+      "number": 6,
+      "direction": "down",
+      "row": 2,
+      "col": 4,
+      "length": 6,
+      "answer": "SAIGON",
+      "clue": "Vecchio nome di Ho-Chi-Minh.",
+      "hint": true,
+      "image": "/assets/generico3/v_6.jpg"
+    },
+    {
+      "id": 12,
+      "number": 9,
+      "direction": "down",
+      "row": 4,
+      "col": 5,
+      "length": 4,
+      "answer": "MORO",
+      "clue": "Quello di Venezia è Otello.",
+      "hint": false
+    },
+    {
+      "id": 13,
+      "number": 10,
+      "direction": "down",
+      "row": 4,
+      "col": 7,
+      "length": 4,
+      "answer": "RANE",
+      "clue": "Comuni anfibi.",
+      "hint": true,
+      "image": "/assets/generico3/v_10.jpg"
+    },
+    {
+      "id": 14,
+      "number": 5,
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 5,
+      "answer": "OVILE",
+      "clue": "La casa per le pecore.",
+      "hint": true,
+      "image": "/assets/generico3/v_5.jpg"
+    }
+  ]
+}

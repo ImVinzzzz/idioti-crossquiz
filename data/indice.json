@@ -20,13 +20,18 @@
     "file": "generico2"
   },
   {
-    "id": "santi",
-    "titolo": "Santi",
-    "file": "schema1"
+    "id": "generico3",
+    "titolo": "Generico 3",
+    "file": "generico3"
   },
-  {
-    "id": "santini",
-    "titolo": "Santini",
-    "file": "santini"
-  }
-]
+    {
+      "id": "santi",
+      "titolo": "Santi",
+      "file": "schema1"
+    },
+    {
+      "id": "santini",
+      "titolo": "Santini",
+      "file": "santini"
+    }
+  ]
